@@ -1,0 +1,1787 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Sierra\n"
+"POT-Creation-Date: 2019-05-27 13:16+0200\n"
+"PO-Revision-Date: 2019-05-27 13:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: 404.php:16
+msgid "404 ERROR"
+msgstr "BŁĄD 404"
+
+#: 404.php:17
+msgid "Ooops!"
+msgstr "Ups!"
+
+#: 404.php:18
+msgid "Back to Home"
+msgstr "Powrót do strony głównej"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:48
+#: inc/customizer-functions.php:36 inc/customizer-functions.php:788
+#: inc/customizer-functions.php:844
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:54
+msgid "Background Image"
+msgstr "Obrazek tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:59
+#: admin/kirki/controls/php/class-kirki-control-base.php:132
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:410
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:415
+msgid "No File Selected"
+msgstr "Nie wybrano pliku"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:62
+#: admin/kirki/controls/php/class-kirki-control-base.php:133
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:388
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:445
+#: admin/kirki/controls/views/image.php:37
+#: admin/kirki/field/class-kirki-field-image.php:50
+msgid "Remove"
+msgstr "Usuń"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:63
+#: admin/kirki/controls/php/class-kirki-control-base.php:135
+msgid "Select File"
+msgstr "Wybierz plik"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:70
+msgid "Background Repeat"
+msgstr "Powtórzenie tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:72
+msgid "No Repeat"
+msgstr "Bez powtarzania"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:73
+msgid "Repeat All"
+msgstr "Powtarzaj wszystko"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:74
+msgid "Repeat Horizontally"
+msgstr "Powtarzaj poziomo"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:75
+msgid "Repeat Vertically"
+msgstr "Powtarzaj pionowo"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:81
+#: inc/customizer-functions.php:568
+msgid "Background Position"
+msgstr "Pozycja tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:83
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:114
+#: inc/customizer-functions.php:574
+msgid "Left Top"
+msgstr "Lewa góra"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:84
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:115
+#: inc/customizer-functions.php:575
+msgid "Left Center"
+msgstr "Lewy środek"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:85
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:116
+#: inc/customizer-functions.php:576
+msgid "Left Bottom"
+msgstr "Lewy dół"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:86
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:117
+#: inc/customizer-functions.php:577
+msgid "Right Top"
+msgstr "Prawa góra"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:87
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:118
+#: inc/customizer-functions.php:578
+msgid "Right Center"
+msgstr "Prawy środek"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:88
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:119
+#: inc/customizer-functions.php:579
+msgid "Right Bottom"
+msgstr "Prawy dół"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:89
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:120
+#: inc/customizer-functions.php:580
+msgid "Center Top"
+msgstr "Środek góra"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:90
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:121
+#: inc/customizer-functions.php:581
+msgid "Center Center"
+msgstr "Środek środek"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:91
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:122
+#: inc/customizer-functions.php:582
+msgid "Center Bottom"
+msgstr "Środek dół"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:97
+msgid "Background Size"
+msgstr "Rozmiar tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:100
+msgid "Cover"
+msgstr "Okładka"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:103
+msgid "Contain"
+msgstr "Zawiera"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:106
+#: inc/customizer-functions.php:759
+msgid "Auto"
+msgstr "Automatycznie"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:113
+#: inc/customizer-functions.php:597
+msgid "Background Attachment"
+msgstr "Załącznik tła"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:116
+#: inc/customizer-functions.php:602
+msgid "Scroll"
+msgstr "Przewijanie"
+
+#: admin/kirki/controls/php/class-kirki-control-background.php:119
+#: inc/customizer-functions.php:603
+msgid "Fixed"
+msgstr "Stały"
+
+#: admin/kirki/controls/php/class-kirki-control-base.php:134
+#: admin/kirki/controls/views/image.php:36
+#: admin/kirki/field/class-kirki-field-image.php:49
+msgid "Default"
+msgstr "Domyślny"
+
+#: admin/kirki/controls/php/class-kirki-control-base.php:136
+msgid "Standard Fonts"
+msgstr "Standardowe czcionki"
+
+#: admin/kirki/controls/php/class-kirki-control-base.php:137
+msgid "Google Fonts"
+msgstr "Czcionki Google"
+
+#: admin/kirki/controls/php/class-kirki-control-base.php:138
+msgid "CSS Defaults"
+msgstr "Domyślne ustawienia CSS"
+
+#: admin/kirki/controls/php/class-kirki-control-base.php:139
+msgid "Default Browser Font-Family"
+msgstr "Domyślna czcionka przeglądarki"
+
+#: admin/kirki/controls/php/class-kirki-control-code.php:39
+msgid ""
+"Please update your WordPress installation to a version newer than 4.9 to "
+"access the code control."
+msgstr ""
+"Proszę zaktualizować instalację WordPress do wersji nowszej niż 4,9, aby "
+"uzyskać dostęp do kontroli kodu."
+
+#: admin/kirki/controls/php/class-kirki-control-dimension.php:39
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:138
+msgid "Invalid Value"
+msgstr "Niepoprawna wartość"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:123
+#: admin/kirki/controls/php/class-kirki-control-typography.php:108
+msgid "Font Size"
+msgstr "Rozmiar czcionki"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:124
+msgid "Font Weight"
+msgstr "Grubość Czcionki"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:125
+#: admin/kirki/controls/php/class-kirki-control-typography.php:116
+msgid "Line Height"
+msgstr "Wysokość linii"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:126
+msgid "Font Style"
+msgstr "Styl czcionki"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:127
+#: admin/kirki/controls/php/class-kirki-control-typography.php:124
+msgid "Letter Spacing"
+msgstr "Odległość liter"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:128
+#: admin/kirki/controls/php/class-kirki-control-typography.php:132
+msgid "Word Spacing"
+msgstr "Odległość słów"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:129
+#: admin/kirki/field/class-kirki-field-spacing.php:32
+msgid "Top"
+msgstr "Góra"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:130
+#: admin/kirki/field/class-kirki-field-spacing.php:33
+msgid "Bottom"
+msgstr "Dół"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:131
+#: admin/kirki/controls/php/class-kirki-control-typography.php:151
+#: admin/kirki/field/class-kirki-field-spacing.php:34
+#: inc/customizer-functions.php:157
+msgid "Left"
+msgstr "Lewa"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:132
+#: admin/kirki/controls/php/class-kirki-control-typography.php:163
+#: admin/kirki/field/class-kirki-field-spacing.php:35
+#: inc/customizer-functions.php:158
+msgid "Right"
+msgstr "Prawa"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:133
+#: admin/kirki/controls/php/class-kirki-control-typography.php:157
+#: inc/customizer-functions.php:156
+msgid "Center"
+msgstr "Środek"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:134
+msgid "Size"
+msgstr "Rozmiar"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:135
+msgid "Spacing"
+msgstr "Odstęp"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:136
+msgid "Width"
+msgstr "Szerokość"
+
+#: admin/kirki/controls/php/class-kirki-control-dimensions.php:137
+#: inc/customizer-functions.php:373 inc/customizer-functions.php:531
+msgid "Height"
+msgstr "Wysokość"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:77
+msgid "row"
+msgstr "wiersz"
+
+#. translators: %s represents the label of the row.
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:86
+#, php-format
+msgid "Add new %s"
+msgstr "Dodaj nowy %s"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:123
+msgid "Select a Page"
+msgstr "Wybierz stronę"
+
+#. translators: %s represents the number of rows we're limiting the repeater to allow.
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:229
+#, php-format
+msgid "Limit: %s rows"
+msgstr "Limit: %s wierszy"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:363
+msgid "Hex Value"
+msgstr "Wartość Hex"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:378
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:383
+msgid "No Image Selected"
+msgstr "Nie wybrano obrazu"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:389
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:393
+msgid "Add Image"
+msgstr "Dodaj obraz"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:389
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:391
+msgid "Change Image"
+msgstr "Zmień obraz"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:421
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:425
+msgid "Add File"
+msgstr "Dodaj plik"
+
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:421
+#: admin/kirki/controls/php/class-kirki-control-repeater.php:423
+msgid "Change File"
+msgstr "Zmień plik"
+
+#: admin/kirki/controls/php/class-kirki-control-slider.php:66
+msgid "Reset"
+msgstr "Resetuj"
+
+#: admin/kirki/controls/php/class-kirki-control-switch.php:52
+#: admin/kirki/field/class-kirki-field-switch.php:39
+msgid "On"
+msgstr "Włącz"
+
+#: admin/kirki/controls/php/class-kirki-control-switch.php:56
+#: admin/kirki/field/class-kirki-field-switch.php:40
+msgid "Off"
+msgstr "Wyłącz"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:82
+msgid "Font Family"
+msgstr "Czcionka"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:83
+#: admin/kirki/controls/php/class-kirki-control-typography.php:88
+msgid "Select Font Family"
+msgstr "Wybierz Czcionke"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:87
+msgid "Backup Font"
+msgstr "Czcionka zapasowa"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:93
+msgid "Variant"
+msgstr "Wariant"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:100
+msgid "Download font-family to server instead of using the Google CDN."
+msgstr "Pobierz Font-Family na serwer zamiast korzystać z Google CDN."
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:140
+msgid "Text Align"
+msgstr "Wyrównanie Tekstu"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:145
+#: admin/kirki/controls/php/class-kirki-control-typography.php:187
+#: admin/kirki/controls/php/class-kirki-control-typography.php:203
+msgid "Inherit"
+msgstr "Dziedziczone"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:169
+msgid "Justify"
+msgstr "Justuj"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:179
+msgid "Text Transform"
+msgstr "Przekształcenie tekstu"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:182
+#: admin/kirki/controls/php/class-kirki-control-typography.php:198
+msgid "None"
+msgstr "Brak"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:183
+msgid "Capitalize"
+msgstr "Pierwsza Wielka Litera"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:184
+msgid "Uppercase"
+msgstr "Wielkie litery"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:185
+msgid "Lowercase"
+msgstr "Małe litery"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:186
+#: admin/kirki/controls/php/class-kirki-control-typography.php:202
+msgid "Initial"
+msgstr "Inicjał"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:195
+msgid "Text Decoration"
+msgstr "Dekoracja tekstu"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:199
+msgid "Underline"
+msgstr "Podkreślenie"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:200
+msgid "Overline"
+msgstr "Nad linią"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:201
+msgid "Line-Through"
+msgstr "Line-through"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:211
+msgid "Margin Top"
+msgstr "Górny margines"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:219
+msgid "Margin Bottom"
+msgstr "Dolny margines"
+
+#: admin/kirki/controls/php/class-kirki-control-typography.php:227
+msgid "Color"
+msgstr "Kolor"
+
+#: admin/kirki/controls/views/image.php:34
+#: admin/kirki/controls/views/image.php:39
+#: admin/kirki/field/class-kirki-field-image.php:47
+#: admin/kirki/field/class-kirki-field-image.php:52
+msgid "Select image"
+msgstr "Wybierz obraz"
+
+#: admin/kirki/controls/views/image.php:35
+#: admin/kirki/field/class-kirki-field-image.php:48
+msgid "Change image"
+msgstr "Zmień obraz"
+
+#: admin/kirki/controls/views/image.php:38
+#: admin/kirki/field/class-kirki-field-image.php:51
+msgid "No image selected"
+msgstr "Nie wybrano obrazu"
+
+#: admin/kirki/controls/views/image.php:40
+#: admin/kirki/field/class-kirki-field-image.php:53
+msgid "Choose image"
+msgstr "Wybierz obraz"
+
+#. translators: %s represents the field ID where the error occurs.
+#: admin/kirki/core/class-kirki-field.php:248
+#, php-format
+msgid "Typo found in field %s - setting instead of settings."
+msgstr "Typo znaleźć w polu %s-ustawienie zamiast ustawień."
+
+#. translators: %1$s represents the field ID where the error occurs. %2$s is the URL in the documentation site.
+#: admin/kirki/core/class-kirki-field.php:257
+#: admin/kirki/core/class-kirki-field.php:267
+#, php-format
+msgid ""
+"Config not defined for field %1$s - See %2$s for details on how to properly "
+"add fields."
+msgstr ""
+"Config nie zdefiniowano dla pola%1$s-Zobacz%2$s, aby uzyskać szczegółowe "
+"informacje na temat poprawnego dodawania pól."
+
+#. translators: %1$s represents the field ID where the error occurs.
+#: admin/kirki/core/class-kirki-field.php:375
+#, php-format
+msgid "\"partial_refresh\" invalid entry in field %s"
+msgstr "\"partial_refresh\" nieprawidłowy wpis w polu %s"
+
+#. translators: The field ID where the error occurs.
+#: admin/kirki/core/class-kirki-field.php:498
+#: admin/kirki/core/class-kirki-field.php:509
+#, php-format
+msgid ""
+"\"output\" invalid format in field %s. The \"output\" argument should be "
+"defined as an array of arrays."
+msgstr ""
+"Nieprawidłowy format \"output\" w polu %s. Argument \"output\" powinien być "
+"zdefiniowany jako tablica tablic."
+
+#: admin/kirki/core/class-kirki-init.php:276
+msgid ""
+"We detected you're using Kirki_Init::get_variables(). Please use Kirki_Util::"
+"get_variables() instead."
+msgstr ""
+"Wykryliśmy, że korzystasz z Kirki_Init:: get_variables (). Zamiast tego "
+"należy użyć Kirki_Util:: get_variables ()."
+
+#: admin/kirki/core/class-kirki.php:237
+msgid ""
+"Kirki fields should not be added on customize_register. Please add them "
+"directly, or on init."
+msgstr ""
+"Pola Kirki nie powinny być dodawane na customize_register. Proszę dodać je "
+"bezpośrednio, lub na init."
+
+#: admin/kirki/deprecated/functions.php:19
+#, php-format
+msgid "%1$s or %2$s"
+msgstr "%1$s lub %2$s"
+
+#: admin/kirki/field/class-kirki-field-color.php:52
+msgid ""
+"Do not use \"alpha\" as an argument in color controls. Use "
+"\"choices[alpha]\" instead."
+msgstr ""
+"Nie należy używać \"Alpha\" jako argumentu w formantach kolorów. Zamiast "
+"tego użyj opcji \"Choices [alpha]\"."
+
+#. translators: %1$s represents the field ID where the error occurs. %2%s is buttonset/image.
+#: admin/kirki/field/class-kirki-field-radio.php:37
+#, php-format
+msgid ""
+"Error in field %1$s. The \"mode\" argument has been deprecated since Kirki "
+"v0.8. Use the \"radio-%2$s\" type instead."
+msgstr ""
+"Błąd w polu%1$s. Argument \"Mode\" jest nieużywany od Kirki v 0.8. Zamiast "
+"tego należy użyć typu \"Radio-%2$s\"."
+
+#: admin/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:60
+msgid "Customizing"
+msgstr "Dostosowywanie"
+
+#. translators: The title.
+#: admin/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:63
+#, php-format
+msgid "Customizing &#9656; %s"
+msgstr "Dostosowywanie &#9656; %s"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:209
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:210
+msgid "Ultra-Light 100"
+msgstr "Ultra-Light 100"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:211
+msgid "Ultra-Light 100 Italic"
+msgstr "Ultra-Light 100 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:212
+msgid "Light 200"
+msgstr "Light 200"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:213
+msgid "Light 200 Italic"
+msgstr "Light 200 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:214
+msgid "Book 300"
+msgstr "Book 300"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:215
+msgid "Book 300 Italic"
+msgstr "Book 300 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:216
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:217
+msgid "Normal 400"
+msgstr "Normal 400"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:218
+msgid "Normal 400 Italic"
+msgstr "Normal 400 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:219
+msgid "Medium 500"
+msgstr "Medium 500"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:220
+msgid "Medium 500 Italic"
+msgstr "Medium 500 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:221
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:222
+msgid "Semi-Bold 600"
+msgstr "Semi-bold 600"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:223
+msgid "Semi-Bold 600 Italic"
+msgstr "Semi-bold 600 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:224
+msgid "Bold 700"
+msgstr "Bold 700"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:225
+msgid "Bold 700 Italic"
+msgstr "Bold 700 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:226
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:227
+msgid "Extra-Bold 800"
+msgstr "Extra-Bold 800"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:228
+msgid "Extra-Bold 800 Italic"
+msgstr "Extra-Bold 800 kursywa"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:229
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:230
+msgid "Ultra-Bold 900"
+msgstr "Ultra-Bold 900"
+
+#: admin/kirki/modules/webfonts/class-kirki-fonts.php:231
+msgid "Ultra-Bold 900 Italic"
+msgstr "Ultra-Bold 900 kursywa"
+
+#: admin/kirki/upgrade-notifications.php:30
+msgid "Important Upgrade Notice:"
+msgstr "Ważna informacja o uaktualnieniu:"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Zainstaluj wymagane wtyczki"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Zainstaluj wtyczki"
+
+#. translators: %s: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalowanie wtyczki: %s"
+
+#. translators: %s: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Aktualizacja wtyczki: %s"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Coś poszło nie tak z API wtyczki."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:336
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Ten motyw wymaga zainstalowania wtyczki: %1$s."
+msgstr[1] "Zalecamy zainstalowanie następujących wtyczek: %1$s."
+msgstr[2] "Zalecamy zainstalowanie następujących wtyczek: %1$s."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:342
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Ten motyw zaleca zainstalowanie wtyczki: %1$s."
+msgstr[1] "Ten motyw zaleca zainstalowanie wtyczek: %1$s."
+msgstr[2] "Ten motyw zaleca zainstalowanie wtyczek: %1$s."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"Następująca wtyczka musi być zaktualizowana do najnowszej wersji aby "
+"zapewnić maksymalną kompatybilność z motywem: %1$s."
+msgstr[1] ""
+"Następujące wtyczki muszą być zaktualizowane do najnowszej wersji aby "
+"zapewnić maksymalną kompatybilność z motywem: %1$s."
+msgstr[2] ""
+"Następujące wtyczki muszą być zaktualizowane do najnowszej wersji aby "
+"zapewnić maksymalną kompatybilność z motywem: %1$s."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Dostępna aktualizacja: %1$s."
+msgstr[1] "Dostępne aktualizacje: %1$s."
+msgstr[2] "Dostępne aktualizacje: %1$s."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:360
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Wymagana wtyczka jest aktualnie nieaktywna: %1$s."
+msgstr[1] "Wymagane wtyczki są aktualnie nieaktywne: %1$s."
+msgstr[2] "Wymagane wtyczki są aktualnie nieaktywne: %1$s."
+
+#. translators: 1: plugin name(s).
+#: admin/tgmpa/class-tgm-plugin-activation.php:366
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Zalecana wtyczka jest aktualnie nieaktywna: %1$s."
+msgstr[1] "Zalecane wtyczki są aktualnie nieaktywne: %1$s."
+msgstr[2] "Zalecane wtyczki są aktualnie nieaktywne: %1$s."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:371
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Rozpocznij instalację wtyczki"
+msgstr[1] "Rozpocznij instalację wtyczek"
+msgstr[2] "Rozpocznij instalację wtyczek"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Rozpoczyna aktualizowanie wtyczki"
+msgstr[1] "Rozpoczyna aktualizowanie wtyczek"
+msgstr[2] "Rozpoczyna aktualizowanie wtyczek"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:381
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Rozpoczyna aktywację wtyczki"
+msgstr[1] "Rozpoczyna aktywację wtyczek"
+msgstr[2] "Rozpoczyna aktywację wtyczek"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Wróć do instalatora wymaganych wtyczek"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:386
+#: admin/tgmpa/class-tgm-plugin-activation.php:827
+#: admin/tgmpa/class-tgm-plugin-activation.php:2533
+#: admin/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Powrót do Kokpitu"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:387
+#: admin/tgmpa/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Wtyczka aktywowana pomyślnie."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:388
+#: admin/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Następująca wtyczka została aktywowana pomyślnie:"
+msgstr[1] "Następujące wtyczki zostały aktywowane pomyślnie:"
+msgstr[2] "Następujące wtyczki zostały aktywowane pomyślnie:"
+
+#. translators: 1: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Nie podjęto żadnych działań. Wtyczka %1$s jest już aktywna."
+
+#. translators: 1: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Wtyczka nie została aktywowana. Ten szablon wymaga nowszej wersja wtyczki "
+"%s. Zaktualizuj wtyczkę."
+
+#. translators: 1: dashboard link.
+#: admin/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Wszystkie wtyczki zainstalowano i aktywowano pomyślnie. %1$s"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Ukryj to powiadomienie"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Pozostała jedna bądź więcej wtyczek, wymagających instalacji, aktualizacji "
+"lub aktywacji."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Skontaktuj się z administratorem tej strony."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Ta wtyczka musi zostać zaktualizowana, by była kompatybilna z Twoim "
+"szablonem."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Wymagana aktualizacja"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Zdalny pakiet wtyczek nie zawiera folderu z żądanym plikiem i zmiana nazwy "
+"nie działała."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:934
+#: admin/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Skontaktuj się z dostawcą wtyczki i poproś aby przygotował paczkę z wtyczką "
+"zgodnie z wytycznymi WordPress'a."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Paczka wtyczki zawiera więcej niż jeden plik, ale pliki nie są spakowane do "
+"folderu."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:1121
+#: admin/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "i"
+
+#. translators: %s: version number
+#: admin/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Wymagane"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Zalecane"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Repozytorium WordPress'a"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Zewnętrzne źródło"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Pre-instalowane"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Nie zainstalowane"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Zainstalowane ale nie aktywowane"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Aktywny"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Wymagana aktualizacja nie jest dostępna"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Wymaga aktualizacji"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Zalecana aktualizacja"
+
+#. translators: 1: install status, 2: update status
+#: admin/tgmpa/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. translators: 1: number of plugins.
+#: admin/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Wszystkie <span class=\"count\">(%s)</span>"
+msgstr[1] "Wszystkie <span class=„count”>(%s)</span>"
+msgstr[2] "Wszystkie <span class=„count”>(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: admin/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Do instalacji <span class=\"count\">(%s)</span>"
+msgstr[1] "Do instalacji <span class=„count”>(%s)</span>"
+msgstr[2] "Do instalacji <span class=„count”>(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: admin/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Dostępna Aktualizacja <span class=\"count\">(%s)</span>"
+msgstr[1] "Dostępna Aktualizacja <span class=„count”>(%s)</span>"
+msgstr[2] "Dostępna Aktualizacja <span class=„count”>(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: admin/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Aby aktywować <span class=\"count\">(%s)</span>"
+msgstr[1] "Aby aktywować <span class=\"count\">(%s)</span>"
+msgstr[2] "Aby aktywować <span class=\"count\">(%s)</span>"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "nieznana"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Zainstalowana wersja:"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Minimalna wymagana wersja:"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Dostępna wersja:"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Brak wtyczek do zainstalowania, aktualizacji lub aktywacji."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Wtyczka"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Źródło"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Typ"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Wersja"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Status"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr "Zainstaluj %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr "Zaktualizuj %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr "Aktywuj %2$s"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Wiadomość o aktualizacji od autora wtyczki:"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Instaluj"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Aktualizuj"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Aktywuj"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Nie zaznaczono żadnej wtyczki do instalacji. Żadna akcja nie została "
+"wykonana."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Nie zaznaczono żadnej wtyczki do aktualizacji. Żadna akcja nie została "
+"wykonana."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Na razie brak wtyczek dostępnych do instalacji."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Na razie brak wtyczek dostępnych do aktualizacji."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Żadne wtyczki nie zostały wybrane do aktywacji. Nie podjęto żadnego "
+"działania."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Na razie brak wtyczek dostępnych do aktywacji."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Aktywacja wtyczki nie powiodła się."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Aktualizacja wtyczki %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Wystąpił błąd podczas instalacji %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Instalacja %1$s nie powiodła się."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Proces instalacji i aktywacji rozpoczęty. Proces ten może trochę potrwać, "
+"prosimy o cierpliwość."
+
+#. translators: 1: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s zainstalowane i aktywowane z powodzeniem."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3509
+#: admin/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Pokaż szczegóły"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3509
+#: admin/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Ukryj szczegóły"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Wszystkie instalacje i aktywacje zostały zakończone."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalacja i aktywacja wtyczki %1$s (%2$d/%3$d)"
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Proces instalacji rozpoczęty. To może chwilę potrwać, prosimy o cierpliwość."
+
+#. translators: 1: plugin name.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s zainstalowano pomyślnie."
+
+#: admin/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Wszystkie instalacje zostały zakończone."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalowanie wtyczki %1$s (%2$d/%3$d)"
+
+#: admin/wpsierra-welcome.php:9
+msgid "The theme has been updated, excellent!"
+msgstr "Motyw został zaktualizowany, doskonała!"
+
+#: admin/wpsierra-welcome.php:10
+msgid "Demos"
+msgstr "Dema"
+
+#: admin/wpsierra-welcome.php:45
+msgid "Welcome"
+msgstr "Witaj"
+
+#: admin/wpsierra-welcome.php:61
+msgid "Thank You for installing WP Sierra Theme!"
+msgstr "Dziękujemy za zainstalowanie WP Sierra!"
+
+#: admin/wpsierra-welcome.php:62
+msgid "There are just few steps to unlock full potential of WP Sierra"
+msgstr "Istnieje tylko kilka kroków, aby odblokować pełen potencjał WP Sierra"
+
+#: admin/wpsierra-welcome.php:64
+msgid ""
+"Simply complete the steps listed below (it only takes a minute or two 🙂) and "
+"you will be able to enjoy all functionalities of WP Sierra Theme."
+msgstr ""
+"Wystarczy wykonać kroki wymienione poniżej (zajmuje to tylko minutę lub dwie "
+"🙂) i będzie można korzystać ze wszystkich funkcjonalności WP Sierra."
+
+#: admin/wpsierra-welcome.php:65
+msgid "So without a further ado let's begin! 🧐"
+msgstr "Więc bez zbędnych ceregieli, Zacznijmy! 🧐"
+
+#: admin/wpsierra-welcome.php:67
+msgid ""
+"Install and Activate all recommended plugins to unlock WP Sierra custom "
+"features"
+msgstr ""
+"Zainstaluj i aktywuj wszystkie zalecane wtyczki, aby odblokować "
+"niestandardowe funkcje WP Sierra"
+
+#: admin/wpsierra-welcome.php:72
+msgid "Install and Activate Plugins Now"
+msgstr "Zainstaluj i aktywuj wtyczki"
+
+#: admin/wpsierra-welcome.php:76
+msgid "Success: All plugins are installed and activated"
+msgstr "Sukces: wszystkie wtyczki są zainstalowane i aktywowane"
+
+#: admin/wpsierra-welcome.php:84
+msgid ""
+"Go to Wordpress Customizer to tweak many WP Sierra theme options and "
+"customize it just how you like!"
+msgstr ""
+"Dostosuj stronę tak jak lubisz dzięki wielu opcją dostępnym w WP Sierra!"
+
+#: admin/wpsierra-welcome.php:85
+msgid "Go To Customizer"
+msgstr "Dostosuj stronę"
+
+#: admin/wpsierra-welcome.php:88
+msgid "Import one of the predesigned Demo sites"
+msgstr "Zaimportuj jedną z przygotowanych stron demo"
+
+#: admin/wpsierra-welcome.php:92 admin/wpsierra-welcome.php:96
+msgid "Go to WP Sierra Demo Importer"
+msgstr "Importowanie demo stron WP Sierra"
+
+#: admin/wpsierra-welcome.php:101
+msgid "Need help with WP Sierra Theme?"
+msgstr "Potrzebujesz pomocy z WP Sierra?"
+
+#: admin/wpsierra-welcome.php:102
+msgid "Send us a message"
+msgstr "Wyślij Do Nas Wiadomość"
+
+#. translators: %s: author term
+#: archive.php:18
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#. translators: %s: category term
+#: archive.php:24
+#, php-format
+msgid "Category: %s"
+msgstr "Kategoria %s"
+
+#. translators: %s: tag term
+#: archive.php:31
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: archive.php:35
+msgid "Archive"
+msgstr "Archiwum"
+
+#: comments.php:11
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "Wpis jest chroniony hasłem. Podaj hasło by przeglądać komentarze."
+
+#: comments.php:33
+msgid "Comments"
+msgstr "Komentarze"
+
+#: comments.php:33
+msgid "Comment"
+msgstr "Komentarz"
+
+#: comments.php:39
+msgid "Previous Comments"
+msgstr "Poprzednie Komentarze"
+
+#: comments.php:40
+msgid "Next Comments"
+msgstr "Następne Komentarze"
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "Komentarze są wyłączone."
+
+#: content-none.php:11
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+#. translators: %s: link term
+#: content-none.php:17
+#, php-format
+msgid "Ready to publish your first post? %1$sGet started here%2$s."
+msgstr "Gotowy opublikować swój pierwszy post? %1$s Rozpocznij tutaj %2$s."
+
+#: content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+"Niestety, nic nie pasuje do wyszukiwanych haseł. Spróbuj ponownie z różnymi "
+"słowami kluczowymi."
+
+#: content-none.php:23
+msgid "There aren't any posts currently published in this category."
+msgstr "Nie ma żadnych postów opublikowanych obecnie w tej kategorii."
+
+#: content-none.php:25
+msgid "There aren't any posts currently published under this taxonomy."
+msgstr "Nie ma żadnych postów opublikowanych obecnie w tej kategorii."
+
+#: content-none.php:27
+msgid "There aren't any posts currently published under this tag."
+msgstr "Nie ma żadnych postów opublikowanych obecnie pod tym tagiem."
+
+#: content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "Wydaje się, że nie możemy znaleźć tego, czego szukasz."
+
+#: content.php:17 page.php:27
+msgid "Pages:"
+msgstr "Strony:"
+
+#: functions.php:140
+msgid "Blog Sidebar"
+msgstr "Panel boczny bloga"
+
+#: functions.php:141 inc/sierra-functions.php:1086
+msgid "Footer One"
+msgstr "Stopka 1"
+
+#: functions.php:142 inc/sierra-functions.php:1101
+msgid "Footer Two"
+msgstr "Stopka 2"
+
+#: functions.php:143 inc/sierra-functions.php:1115
+msgid "Footer Three"
+msgstr "Stopka 3"
+
+#: functions.php:144 inc/sierra-functions.php:1129
+msgid "Footer Four"
+msgstr "Stopka 4"
+
+#: functions.php:186
+msgid "Pale Pink"
+msgstr "Jasnoróżowe"
+
+#: functions.php:192
+msgid "Vivid Red"
+msgstr "Żywy czerwony"
+
+#: functions.php:198
+msgid "Luminous vivid orange"
+msgstr "Świecący żywy pomarańczowy"
+
+#: functions.php:204
+msgid "Luminous vivid amber"
+msgstr "Świecący żywy bursztynowy"
+
+#: functions.php:210
+msgid "Light green cyan"
+msgstr "Jasnozielony Błękitny"
+
+#: functions.php:216
+msgid "Vivid green cyan"
+msgstr "Żywy zielony Błękitny"
+
+#: functions.php:222
+msgid "Pale cyan blue"
+msgstr "Jasnoniebieski błękit"
+
+#: functions.php:228
+msgid "Vivid cyan blue"
+msgstr "Żywy błękitny błękit"
+
+#: functions.php:234
+msgid "Very light gray"
+msgstr "Bardzo jasny szary"
+
+#: functions.php:240
+msgid "Very dark gray"
+msgstr "Bardzo ciemny szary"
+
+#: functions.php:246 inc/customizer-functions.php:70
+msgid "Accent Color"
+msgstr "Główny kolor"
+
+#: functions.php:305
+msgid "Header Menu"
+msgstr "Menu Nagłówka"
+
+#: functions.php:306
+msgid "Footer Menu"
+msgstr "Menu Stopki"
+
+#: home.php:13
+msgid "main"
+msgstr "główny"
+
+#: inc/customizer-functions.php:16
+msgid "WP Sierra Theme"
+msgstr "Moty WP Sierra"
+
+#: inc/customizer-functions.php:29
+msgid "General Options"
+msgstr "Ustawienia główne"
+
+#: inc/customizer-functions.php:30
+msgid "There are general theme options."
+msgstr "W tym miejscu znajdują się ustawienia ogólne."
+
+#: inc/customizer-functions.php:53
+msgid "Foreground Color"
+msgstr "Kolor pierwszego planu"
+
+#: inc/customizer-functions.php:105
+msgid "Header Overlay Color"
+msgstr "Dodatkowa warstwa koloru nagłowka"
+
+#: inc/customizer-functions.php:121 inc/customizer-functions.php:932
+msgid "Corner Radius"
+msgstr "Zaokrąglenia"
+
+#: inc/customizer-functions.php:122
+msgid ""
+"Corner radius for theme elements like: images, input, textara or select "
+"fields."
+msgstr ""
+"Zaokrąglenia dla elementów motywu, takich jak: obrazy, pola tekstowe lub "
+"pola wyboru."
+
+#: inc/customizer-functions.php:133
+msgid "Webfonts Load Method"
+msgstr "Metoda ładowania czcionek"
+
+#: inc/customizer-functions.php:138
+msgid "Link"
+msgstr "Link"
+
+#: inc/customizer-functions.php:139
+msgid "Async"
+msgstr "Async"
+
+#: inc/customizer-functions.php:144
+msgid "Header Options"
+msgstr "Opcje Nagłówka"
+
+#: inc/customizer-functions.php:145
+msgid "There are header theme options."
+msgstr "W tym miejscu znajdują się ustawienia nagłówka."
+
+#: inc/customizer-functions.php:151
+msgid "Header Layout"
+msgstr "Układ Nagłówka"
+
+#: inc/customizer-functions.php:164 inc/customizer-functions.php:729
+msgid "Logo Upload"
+msgstr "Załaduj logo"
+
+#: inc/customizer-functions.php:171
+msgid "Alternative Logo Upload"
+msgstr "Załaduj alternatywne logo"
+
+#: inc/customizer-functions.php:172
+msgid "Use for transparent header in Page Settings when edit your page"
+msgstr "Używane do przeźroczystego nagłówka włączonego w ustawieniach strony"
+
+#: inc/customizer-functions.php:179
+msgid "Header Background Color"
+msgstr "Kolor tła nagłówka"
+
+#: inc/customizer-functions.php:195
+msgid "Header Shadow"
+msgstr "Cień nagłówka"
+
+#: inc/customizer-functions.php:200 inc/customizer-functions.php:271
+#: inc/customizer-functions.php:294 inc/customizer-functions.php:331
+#: inc/customizer-functions.php:349 inc/customizer-functions.php:420
+#: inc/customizer-functions.php:437 inc/customizer-functions.php:454
+#: inc/customizer-functions.php:507 inc/customizer-functions.php:556
+#: inc/customizer-functions.php:623 inc/customizer-functions.php:640
+#: inc/customizer-functions.php:680 inc/customizer-functions.php:692
+#: inc/customizer-functions.php:704
+msgid "Enable"
+msgstr "Włącz"
+
+#: inc/customizer-functions.php:201 inc/customizer-functions.php:272
+#: inc/customizer-functions.php:295 inc/customizer-functions.php:332
+#: inc/customizer-functions.php:350 inc/customizer-functions.php:421
+#: inc/customizer-functions.php:438 inc/customizer-functions.php:455
+#: inc/customizer-functions.php:508 inc/customizer-functions.php:557
+#: inc/customizer-functions.php:624 inc/customizer-functions.php:641
+#: inc/customizer-functions.php:681 inc/customizer-functions.php:693
+#: inc/customizer-functions.php:705
+msgid "Disable"
+msgstr "Wyłącz"
+
+#: inc/customizer-functions.php:207
+msgid "Header Shadow Color"
+msgstr "Kolor cienia nagłówka"
+
+#: inc/customizer-functions.php:229
+msgid "Text and icons color"
+msgstr "Kolor ikon i tekstu"
+
+#: inc/customizer-functions.php:249
+msgid "Alternative text and icons color"
+msgstr "Alternatywny kolor ikon i tekstu"
+
+#: inc/customizer-functions.php:250
+msgid "Use for transparent headers with alternative logo"
+msgstr "Używane do przeźroczystego nagłówka z włączonym logiem alternatywnym"
+
+#: inc/customizer-functions.php:266
+msgid "Search Icon"
+msgstr "Ikona lupy"
+
+#: inc/customizer-functions.php:277
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer-functions.php:278
+msgid "There are blog theme options."
+msgstr "W tym miejscu znajdują się ustawienia bloga."
+
+#: inc/customizer-functions.php:282
+msgid "Archive Blog Options"
+msgstr "Opcje Archiwum Bloga"
+
+#: inc/customizer-functions.php:289
+msgid "Archive Title"
+msgstr "Tytuł archiwum"
+
+#: inc/customizer-functions.php:301
+msgid "Archive Style"
+msgstr "Styl Archiwum"
+
+#: inc/customizer-functions.php:306
+msgid "Modern"
+msgstr "Nowoczesny"
+
+#: inc/customizer-functions.php:307
+msgid "Lines"
+msgstr "Linie"
+
+#: inc/customizer-functions.php:313
+msgid "Archive Columns"
+msgstr "Ilość kolumn"
+
+#: inc/customizer-functions.php:318
+msgid "1 Column"
+msgstr "1 kolumna"
+
+#: inc/customizer-functions.php:319
+msgid "2 Columns"
+msgstr "2 kolumny"
+
+#: inc/customizer-functions.php:320
+msgid "3 Columns"
+msgstr "3 kolumny"
+
+#: inc/customizer-functions.php:326
+msgid "Read More Button"
+msgstr "Przycisk Czytaj Dalej"
+
+#: inc/customizer-functions.php:337
+msgid "Archive Blog Header"
+msgstr "Nagłówek Archiwum Bloga"
+
+#: inc/customizer-functions.php:344 inc/customizer-functions.php:502
+msgid "Header"
+msgstr "Nagłówek"
+
+#: inc/customizer-functions.php:356 inc/customizer-functions.php:514
+msgid "Header Height"
+msgstr "Wysokość nagłówka"
+
+#: inc/customizer-functions.php:361 inc/customizer-functions.php:519
+msgid "Custom Height"
+msgstr "Wysokość Niestandardowa"
+
+#: inc/customizer-functions.php:362 inc/customizer-functions.php:520
+msgid "Fullscreen"
+msgstr "Pełny ekran"
+
+#: inc/customizer-functions.php:393
+msgid "Header Background"
+msgstr "Tło nagłówka"
+
+#: inc/customizer-functions.php:415 inc/customizer-functions.php:551
+msgid "Overlay"
+msgstr "Dodatkowa warstwa koloru"
+
+#: inc/customizer-functions.php:432 inc/customizer-functions.php:618
+msgid "Transparent Header"
+msgstr "Przezroczysty nagłówek"
+
+#: inc/customizer-functions.php:449 inc/customizer-functions.php:635
+msgid "Alternative Logo And Text For Transparent Header"
+msgstr "Alternatywne logo i kolor tekstu dla przezroczystego nagłówka"
+
+#: inc/customizer-functions.php:470
+msgid "Heading Text"
+msgstr "Tekst nagłówka"
+
+#: inc/customizer-functions.php:483
+msgid "Tagline Text"
+msgstr "Slogan"
+
+#: inc/customizer-functions.php:495
+msgid "Single Post Header"
+msgstr "Nagłówek Pojedynczego Posta"
+
+#: inc/customizer-functions.php:655
+msgid "Single Post Options"
+msgstr "Opcje Pojedynczego Posta"
+
+#: inc/customizer-functions.php:662
+msgid "Post Layout"
+msgstr "Układ wpisu"
+
+#: inc/customizer-functions.php:667
+msgid "Right Sidebar"
+msgstr "Prawy panel boczny"
+
+#: inc/customizer-functions.php:668
+msgid "Left Sidebar"
+msgstr "Lewy panel boczny"
+
+#: inc/customizer-functions.php:669
+msgid "No Sidebar"
+msgstr "Brak panelu bocznego"
+
+#: inc/customizer-functions.php:675
+msgid "About Author"
+msgstr "O autorze"
+
+#: inc/customizer-functions.php:687 inc/sierra-functions.php:500
+msgid "Related Posts"
+msgstr "Powiązane wpisy"
+
+#: inc/customizer-functions.php:699
+msgid "Social Icons"
+msgstr "Ikony społecznościowe"
+
+#: inc/customizer-functions.php:710
+msgid "Footer"
+msgstr "Stopka"
+
+#: inc/customizer-functions.php:716
+msgid "Footer Layout"
+msgstr "Układ Stopki"
+
+#: inc/customizer-functions.php:722
+msgid "Simple"
+msgstr "Prosty"
+
+#: inc/customizer-functions.php:723
+msgid "4 Columns"
+msgstr "4 Kolumny"
+
+#: inc/customizer-functions.php:741
+msgid "Logo Width"
+msgstr "Szerokość logo"
+
+#: inc/customizer-functions.php:753
+msgid "Copyright"
+msgstr "Prawa Autorskie"
+
+#: inc/customizer-functions.php:760
+msgid "Custom"
+msgstr "Własny"
+
+#: inc/customizer-functions.php:771
+msgid "Copyright text"
+msgstr "Tekst dotyczący praw autorskich"
+
+#: inc/customizer-functions.php:804 inc/customizer-functions.php:860
+msgid "Text Color"
+msgstr "Kolor tekstu"
+
+#: inc/customizer-functions.php:822
+msgid "Menu Color"
+msgstr "Kolor menu"
+
+#: inc/customizer-functions.php:837
+msgid "Buttons"
+msgstr "Przyciski"
+
+#: inc/customizer-functions.php:838
+msgid "There are customize button options."
+msgstr "W tym miejscu znajdują się ustawienia przycisku."
+
+#: inc/customizer-functions.php:876
+msgid "Background Color on Hover"
+msgstr "Kolor tła po najechaniu"
+
+#: inc/customizer-functions.php:894
+msgid "Text Color on Hover"
+msgstr "Kolor tekstu po najechaniu"
+
+#: inc/customizer-functions.php:912
+msgid "Shadow Color on Hover"
+msgstr "Kolor cienia po najechaniu"
+
+#: inc/customizer-functions.php:946
+msgid "Vertical Padding"
+msgstr "Pionowe odstępy"
+
+#: inc/customizer-functions.php:969
+msgid "Horizontal Padding"
+msgstr "Poziome odstępy"
+
+#: inc/customizer-functions.php:990
+msgid "Typography"
+msgstr "Typografia"
+
+#: inc/customizer-functions.php:991
+msgid "There are general typography theme options."
+msgstr "W tym miejscu znajdują się ustawienia typografii."
+
+#: inc/customizer-functions.php:997
+msgid "Body Typography"
+msgstr "Typografia Główna"
+
+#: inc/customizer-functions.php:998
+msgid "Select the main typography options for your site."
+msgstr "Wybierz główną typografie strony."
+
+#: inc/customizer-functions.php:999
+msgid "The typography options you set here apply to body class on your site."
+msgstr "Opcje typografii ustawione tutaj odnoszą się do klasy Body na stronie."
+
+#: inc/customizer-functions.php:1019
+msgid "Headings Typography"
+msgstr "Typografia Nagłówków"
+
+#: inc/customizer-functions.php:1020
+msgid "Select the all headings font family for your site."
+msgstr "Wybierz czcionkę wszystkich nagłówków dla witryny."
+
+#: inc/customizer-functions.php:1035
+msgid "H1 Typography"
+msgstr "Typografia H1"
+
+#: inc/customizer-functions.php:1055
+msgid "H2 Typography"
+msgstr "Typografia H2"
+
+#: inc/customizer-functions.php:1075
+msgid "H3 Typography"
+msgstr "Typografia H3"
+
+#: inc/customizer-functions.php:1100
+msgid "H4 Typography"
+msgstr "Typografia H4"
+
+#: inc/customizer-functions.php:1120
+msgid "H5 Typography"
+msgstr "Typografia H5"
+
+#: inc/customizer-functions.php:1140
+msgid "H6 Typography"
+msgstr "Typografia H6"
+
+#: inc/customizer-functions.php:1160
+msgid "Paragraph Typography"
+msgstr "Typografia akapitu"
+
+#: inc/customizer-functions.php:1180
+msgid "Blockquote Typography"
+msgstr "Typografia cytatu"
+
+#: inc/customizer-functions.php:1200
+msgid "Menu Typography"
+msgstr "Typografia Menu"
+
+#: inc/sierra-functions.php:102 searchform.php:13
+msgid "Search here..."
+msgstr "Szukaj…"
+
+#: inc/sierra-functions.php:124 inc/sierra-functions.php:276
+#: inc/sierra-functions.php:341 inc/sierra-functions.php:397
+#: inc/sierra-functions.php:550 inc/sierra-functions.php:1048
+msgid "by"
+msgstr ""
+
+#: inc/sierra-functions.php:138
+msgid "View all posts by"
+msgstr "Zobacz wszystkie posty"
+
+#: inc/sierra-functions.php:198 inc/sierra-functions.php:216
+msgid "Read More"
+msgstr "Czytaj dalej"
+
+#: inc/sierra-functions.php:374 inc/sierra-functions.php:434
+msgid "no-image"
+msgstr "brak-obrazu"
+
+#: inc/sierra-functions.php:864 inc/sierra-functions.php:880
+msgid "Posts"
+msgstr "Posty"
+
+#: inc/sierra-functions.php:1088 inc/sierra-functions.php:1103
+#: inc/sierra-functions.php:1117 inc/sierra-functions.php:1131
+#: sidebar-blog.php:15
+msgid "Please add your widget here."
+msgstr "Proszę dodać widget tutaj."
+
+#. translators: %s: search term
+#: search.php:16
+#, php-format
+msgid "Search for: %s"
+msgstr "Wyszukiwanie: %s"
+
+#: sidebar-blog.php:12
+msgid "Blog widgets area"
+msgstr "Widgety Bloga"
+
+#. Theme Name of the plugin/theme
+msgid "WP Sierra"
+msgstr "WP Sierra"
+
+#. Theme URI of the plugin/theme
+msgid "https://wpsierra.com/"
+msgstr "https://wpsierra.com/"
+
+#. Author of the plugin/theme
+msgid "Themesty"
+msgstr "Themesty"
+
+#. Author URI of the plugin/theme
+msgid "https://themesty.com/"
+msgstr "https://themesty.com/"

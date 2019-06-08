@@ -7,16 +7,6 @@
 <nav class="sierra-nav">
 <?php
 if ( has_nav_menu( 'header-menu' ) ) {
-	?>
-	<div class="sierra-menu">
-		<div id="burger-icon">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div><!--/.sierra-menu-->
-	<?php
 		wp_nav_menu(
 			array(
 				'theme_location' => 'header-menu',

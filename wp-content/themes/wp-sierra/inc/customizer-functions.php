@@ -7,6 +7,7 @@
  * @subpackage WP Sierra Theme
  */
 
+
 if ( class_exists( 'Kirki' ) ) {
     function wpsierra_configuration_styling( $config )
     {
@@ -31,6 +32,40 @@ if ( class_exists( 'Kirki' ) ) {
     ) );
     Kirki::add_field( 'wp-sierra', array(
         'type'      => 'color',
+        'settings'  => 'body_background_color',
+        'label'     => esc_html__( 'Background Color', 'wp-sierra' ),
+        'section'   => 'general_options',
+        'default'   => 'rgba(255,255,255,1.0)',
+        'priority'  => 10,
+        'transport' => 'auto',
+        'choices'   => array(
+        'alpha' => true,
+    ),
+        'output'    => array( array(
+        'element'  => array( 'body' ),
+        'property' => 'background',
+    ) ),
+    ) );
+
+    Kirki::add_field( 'wp-sierra', array(
+        'type'      => 'color',
+        'settings'  => 'body_foreground_color',
+        'label'     => esc_html__( 'Foreground Color', 'wp-sierra' ),
+        'section'   => 'general_options',
+        'default'   => 'rgba(255,255,255,1.0)',
+        'priority'  => 10,
+        'transport' => 'auto',
+        'choices'   => array(
+        'alpha' => true,
+    ),
+        'output'    => array( array(
+        'element'  => array( '.sierra-blog-art, .sierra-blog-lines, .sierra-blog-default, .sierra-post-bg, .art-padding .blog-style2' ),
+        'property' => 'background',
+    ) ),
+    ) );
+
+    Kirki::add_field( 'wp-sierra', array(
+        'type'      => 'color',
         'settings'  => 'accent_color',
         'label'     => esc_html__( 'Accent Color', 'wp-sierra' ),
         'section'   => 'general_options',
@@ -49,7 +84,7 @@ if ( class_exists( 'Kirki' ) ) {
 				.elementor-element.sierra-button-arrow .sierra-button:focus, .elementor-element.sierra-button-arrow .sierra-button:visited' ),
         'property' => 'color',
     ), array(
-        'element'  => array( 'button, button:hover, .b-btn, .btn, .button, .wpcf7 input[type="submit"], .wpcf7 input[type="submit"]:hover,
+        'element'  => array( '.b-btn, .btn, .button, .wpcf7 input[type="submit"], .wpcf7 input[type="submit"]:hover,
 				.wpcf7 input[type="submit"]:active,	.wpcf7 input[type="submit"]:focus, .open .dropdown-toggle.btn-primary,
 				.comment-form #submit, .post-header .single-post-categories a:hover, .b-btn:hover, .b-btn:active, .b-btn:focus,
 				.sierra-back:hover, .archive-blog-header, .post-header, .sierra-button, .prev.page-numbers, .next.page-numbers, .prev.page-numbers:hover, .next.page-numbers:hover' ),
@@ -88,7 +123,7 @@ if ( class_exists( 'Kirki' ) ) {
         'section'     => 'general_options',
         'default'     => '10px',
         'output'      => array( array(
-        'element'  => array( '.blog-style2, #authorarea .avatar, .featured-image img, .single-post-content img, .sierra-blog-default, .sierra-blog-lines, .sierra-blog-art, input, textarea, select' ),
+        'element'  => array( '.blog-style2, #authorarea .avatar, .featured-image img, .single-post-content img, .sierra-blog-default, .single-post-categories a, .sierra-blog-lines, .sierra-blog-art, input, textarea, select' ),
         'property' => 'border-radius',
     ) ),
     ) );
@@ -204,7 +239,7 @@ if ( class_exists( 'Kirki' ) ) {
         'element'  => array( '.search-mobile-menu #search #searchform input[type="text"]' ),
         'property' => 'border-color',
     ), array(
-        'element'  => array( '#burger-icon span, .sierra-header-transparent.top #burger-icon.open span' ),
+        'element'  => array( '#burger-icon span, .sierra-header-transparent.top.sierra-alternative-logo #burger-icon.open span, .sierra-header-transparent.top #burger-icon span' ),
         'property' => 'background-color',
     ) ),
     ) );
@@ -212,16 +247,16 @@ if ( class_exists( 'Kirki' ) ) {
         'type'        => 'color',
         'settings'    => 'header_alternative_color',
         'label'       => esc_html__( 'Alternative text and icons color', 'wp-sierra' ),
-        'description' => esc_html__( 'Use for transparent headers', 'wp-sierra' ),
+        'description' => esc_html__( 'Use for transparent headers with alternative logo', 'wp-sierra' ),
         'section'     => 'header_section',
         'default'     => '#FFFFFF',
         'priority'    => 10,
         'transport'   => 'auto',
         'output'      => array( array(
-        'element'  => array( '.sierra-header-transparent.top .sierra-nav > ul > li > a, .sierra-header-transparent.top .sierra-brand-title a, .sierra-header-transparent.top #search-button a' ),
+        'element'  => array( '.sierra-header-transparent.top.sierra-alternative-logo .sierra-nav > ul > li > a, .sierra-header-transparent.top.sierra-alternative-logo .sierra-brand-title a, .sierra-header-transparent.top.sierra-alternative-logo #search-button a' ),
         'property' => 'color',
     ), array(
-        'element'  => array( '.sierra-header-transparent.top #burger-icon span' ),
+        'element'  => array( '.sierra-header-transparent.top.sierra-alternative-logo #burger-icon span' ),
         'property' => 'background-color',
     ) ),
     ) );
@@ -280,10 +315,10 @@ if ( class_exists( 'Kirki' ) ) {
         'default'  => 'col2',
         'priority' => 10,
         'choices'  => array(
-        'col1' => esc_html__( '1 Column', 'wp-sierra' ),
-        'col2' => esc_html__( '2 Columns', 'wp-sierra' ),
-        'col3' => esc_html__( '3 Columns', 'wp-sierra' ),
-    ),
+          'col1' => esc_html__( '1 Column', 'wp-sierra' ),
+          'col2' => esc_html__( '2 Columns', 'wp-sierra' ),
+          'col3' => esc_html__( '3 Columns', 'wp-sierra' ),
+        ),
     ) );
     Kirki::add_field( 'wp-sierra', array(
         'type'     => 'switch',
@@ -411,7 +446,7 @@ if ( class_exists( 'Kirki' ) ) {
     Kirki::add_field( 'wp-sierra', array(
         'type'            => 'switch',
         'settings'        => 'enable_archive_header_alternative_logo',
-        'label'           => esc_html__( 'Alternative Logo For Transparent Header', 'wp-sierra' ),
+        'label'           => esc_html__( 'Alternative Logo And Text For Transparent Header', 'wp-sierra' ),
         'section'         => 'archive_blog_header',
         'default'         => '1',
         'priority'        => 10,
@@ -430,6 +465,23 @@ if ( class_exists( 'Kirki' ) ) {
     ) ),
     ) );
     Kirki::add_field( 'wp-sierra', array(
+        'type'            => 'switch',
+        'settings'        => 'archive_blog_header_tagline',
+        'label'           => esc_html__( 'Tagline Text', 'wp-sierra' ),
+        'section'         => 'archive_blog_header',
+        'default'         => '1',
+        'priority'        => 10,
+        'choices'         => array(
+        'on'  => esc_html__( 'Enable', 'wp-sierra' ),
+        'off' => esc_html__( 'Disable', 'wp-sierra' ),
+    ),
+        'active_callback' => array( array(
+        'setting'  => 'enable_archive_blog_header',
+        'operator' => '==',
+        'value'    => '1',
+    ) ),
+    ) );
+    Kirki::add_field( 'wp-sierra', array(
         'type'            => 'text',
         'settings'        => 'blog_heading_text',
         'label'           => __( 'Heading Text', 'wp-sierra' ),
@@ -440,7 +492,12 @@ if ( class_exists( 'Kirki' ) ) {
         'setting'  => 'enable_archive_blog_header',
         'operator' => '==',
         'value'    => '1',
+    ), array(
+        'setting'  => 'archive_blog_header_tagline',
+        'operator' => '==',
+        'value'    => '0',
     ) ),
+
     ) );
     Kirki::add_field( 'wp-sierra', array(
         'type'            => 'text',
@@ -453,6 +510,10 @@ if ( class_exists( 'Kirki' ) ) {
         'setting'  => 'enable_archive_blog_header',
         'operator' => '==',
         'value'    => '1',
+    ), array(
+        'setting'  => 'archive_blog_header_tagline',
+        'operator' => '==',
+        'value'    => '0',
     ) ),
     ) );
     // Single Post Header
@@ -597,7 +658,7 @@ if ( class_exists( 'Kirki' ) ) {
     Kirki::add_field( 'wp-sierra', array(
         'type'            => 'switch',
         'settings'        => 'enable_post_header_alternative_logo',
-        'label'           => esc_html__( 'Alternative Logo For Transparent Header', 'wp-sierra' ),
+        'label'           => esc_html__( 'Alternative Logo And Text For Transparent Header', 'wp-sierra' ),
         'section'         => 'single_post_header',
         'default'         => '0',
         'priority'        => 10,
@@ -815,7 +876,7 @@ if ( class_exists( 'Kirki' ) ) {
         'alpha' => true,
     ),
         'output'    => array( array(
-        'element'  => '.comment-form #submit,button, .b-btn, .prev.page-numbers, .next.page-numbers, .sierra-button, .wpcf7 input[type="submit"]',
+        'element'  => '.comment-form #submit, .b-btn, .prev.page-numbers, .next.page-numbers, .sierra-button, .wpcf7 input[type="submit"]',
         'property' => 'background-color',
     ) ),
     ) );
@@ -831,7 +892,7 @@ if ( class_exists( 'Kirki' ) ) {
         'alpha' => true,
     ),
         'output'    => array( array(
-        'element'  => '.comment-form #submit, button, .b-btn, .prev.page-numbers, .next.page-numbers, .sierra-button, .wpcf7 input[type="submit"]',
+        'element'  => '.comment-form #submit, .b-btn, .prev.page-numbers, .next.page-numbers, .sierra-button, .wpcf7 input[type="submit"]',
         'property' => 'color',
     ) ),
     ) );
@@ -847,7 +908,7 @@ if ( class_exists( 'Kirki' ) ) {
         'alpha' => true,
     ),
         'output'    => array( array(
-        'element'  => '.comment-form #submit:hover, .prev.page-numbers:hover, .next.page-numbers:hover, button:hover, .b-btn:hover, .b-btn:active, .b-btn:focus,
+        'element'  => '.comment-form #submit:hover, .prev.page-numbers:hover, .next.page-numbers:hover, .b-btn:hover, .b-btn:active, .b-btn:focus,
 				.sierra-button:hover, .sierra-button:focus, .sierra-button:visited, .wpcf7 input[type="submit"]:hover,
 				.wpcf7 input[type="submit"]:active,	.wpcf7 input[type="submit"]:focus',
         'property' => 'background-color',
@@ -865,7 +926,7 @@ if ( class_exists( 'Kirki' ) ) {
         'alpha' => true,
     ),
         'output'    => array( array(
-        'element'  => '.comment-form #submit:hover, button:hover, .b-btn:hover, .b-btn:active, .b-btn:focus,
+        'element'  => '.comment-form #submit:hover, .b-btn:hover, .b-btn:active, .b-btn:focus,
 				.prev.page-numbers:hover, .next.page-numbers:hover, .sierra-button:hover, .sierra-button:focus, .sierra-button:visited, .wpcf7 input[type="submit"]:hover,
 				.wpcf7 input[type="submit"]:active,	.wpcf7 input[type="submit"]:focus',
         'property' => 'color',
@@ -883,7 +944,7 @@ if ( class_exists( 'Kirki' ) ) {
         'alpha' => true,
     ),
         'output'    => array( array(
-        'element'       => '.comment-form #submit:hover, .b-btn:hover, button:hover, .prev.page-numbers:hover,
+        'element'       => '.comment-form #submit:hover, .b-btn:hover, .prev.page-numbers:hover,
 				.next.page-numbers:hover, .b-btn:active, .b-btn:focus,	.sierra-button:hover, .sierra-button:focus,
 				.sierra-button:visited, .wpcf7 input[type="submit"]:hover,
 				.wpcf7 input[type="submit"]:active,	.wpcf7 input[type="submit"]:focus',
@@ -900,7 +961,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => '10px',
         'transport' => 'auto',
         'output'    => array( array(
-        'element'  => array( '.comment-form #submit, .b-btn, button, .prev.page-numbers, .next.page-numbers,
+        'element'  => array( '.comment-form #submit, .b-btn, .prev.page-numbers, .next.page-numbers,
 				.sierra-button, .wpcf7 input[type="submit"]' ),
         'property' => 'border-radius',
     ) ),
@@ -919,11 +980,11 @@ if ( class_exists( 'Kirki' ) ) {
         'step' => '1',
     ),
         'output'    => array( array(
-        'element'  => array( '.comment-form #submit, .b-btn, button, .wpcf7 input[type="submit"]' ),
+        'element'  => array( '.comment-form #submit, .b-btn, .wpcf7 input[type="submit"]' ),
         'property' => 'padding-top',
         'units'    => 'px',
     ), array(
-        'element'  => array( '.comment-form #submit, .b-btn, button, .wpcf7 input[type="submit"]' ),
+        'element'  => array( '.comment-form #submit, .b-btn, .wpcf7 input[type="submit"]' ),
         'property' => 'padding-bottom',
         'units'    => 'px',
     ) ),
@@ -942,11 +1003,11 @@ if ( class_exists( 'Kirki' ) ) {
         'step' => '1',
     ),
         'output'    => array( array(
-        'element'  => array( '.comment-form #submit, .b-btn, button, .wpcf7 input[type="submit"]' ),
+        'element'  => array( '.comment-form #submit, .b-btn, .wpcf7 input[type="submit"]' ),
         'property' => 'padding-left',
         'units'    => 'px',
     ), array(
-        'element'  => array( '.comment-form #submit, .b-btn, button, .wpcf7 input[type="submit"]' ),
+        'element'  => array( '.comment-form #submit, .b-btn, .wpcf7 input[type="submit"]' ),
         'property' => 'padding-right',
         'units'    => 'px',
     ) ),
@@ -1005,7 +1066,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '50px',
         'line-height'    => '60px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1025,7 +1086,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '42px',
         'line-height'    => '50px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1045,7 +1106,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '30px',
         'line-height'    => '37px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1070,7 +1131,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '26px',
         'line-height'    => '31px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1090,7 +1151,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '19px',
         'line-height'    => '23px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1110,7 +1171,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => 'bold',
         'font-size'      => '16px',
         'line-height'    => '24px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
@@ -1130,13 +1191,13 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => '',
         'font-size'      => '16px',
         'line-height'    => '24px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
         'transport' => 'auto',
         'output'    => array( array(
-        'element' => array( 'p,	dt, dd,	dl,	address, label, small, pre, code' ),
+        'element' => array( 'p,	dt, dd,	dl,	address, label, small, pre, code, li' ),
     ) ),
     ) );
     Kirki::add_field( 'wp-sierra', array(
@@ -1150,13 +1211,13 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => '',
         'font-size'      => '16px',
         'line-height'    => '24px',
-        'color'          => '#212121',
+        'color'          => '',
         'letter-spacing' => '0px',
         'text-transform' => 'none',
     ),
         'transport' => 'auto',
         'output'    => array( array(
-        'element' => array( 'blockquote, blockquote p' ),
+        'element' => array( 'blockquote, blockquote p, cite' ),
     ) ),
     ) );
     Kirki::add_field( 'wp-sierra', array(
@@ -1170,7 +1231,7 @@ if ( class_exists( 'Kirki' ) ) {
         'variant'        => '',
         'font-size'      => '14px',
         'line-height'    => '14px',
-        'color'          => '#212121',
+        //'color'          => '#212121',
         'letter-spacing' => '0px',
         'text-transform' => 'uppercase',
     ),

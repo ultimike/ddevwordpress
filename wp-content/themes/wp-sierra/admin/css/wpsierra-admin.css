@@ -9,3 +9,7 @@
 .wpsierra-admin .wp-pointer-content .wpsierra-admin-h2 {
   margin-left: 20px;
 }
+
+.sierra-demo-popup .ocdi__modal-image-container {
+  height: 300px !important;
+}

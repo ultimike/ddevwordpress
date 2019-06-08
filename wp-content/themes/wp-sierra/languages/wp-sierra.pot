@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP Sierra\n"
-"POT-Creation-Date: 2018-12-16 14:19+0100\n"
-"PO-Revision-Date: 2018-12-16 14:18+0100\n"
+"POT-Creation-Date: 2019-05-27 13:16+0200\n"
+"PO-Revision-Date: 2019-05-27 13:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -19,7 +19,7 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: 404.php:16
 msgid "404 ERROR"
@@ -34,7 +34,8 @@ msgid "Back to Home"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:48
-#: inc/customizer-functions.php:753 inc/customizer-functions.php:809
+#: inc/customizer-functions.php:36 inc/customizer-functions.php:788
+#: inc/customizer-functions.php:844
 msgid "Background Color"
 msgstr ""
 
@@ -84,61 +85,61 @@ msgid "Repeat Vertically"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:81
-#: inc/customizer-functions.php:533
+#: inc/customizer-functions.php:568
 msgid "Background Position"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:83
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:114
-#: inc/customizer-functions.php:539
+#: inc/customizer-functions.php:574
 msgid "Left Top"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:84
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:115
-#: inc/customizer-functions.php:540
+#: inc/customizer-functions.php:575
 msgid "Left Center"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:85
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:116
-#: inc/customizer-functions.php:541
+#: inc/customizer-functions.php:576
 msgid "Left Bottom"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:86
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:117
-#: inc/customizer-functions.php:542
+#: inc/customizer-functions.php:577
 msgid "Right Top"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:87
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:118
-#: inc/customizer-functions.php:543
+#: inc/customizer-functions.php:578
 msgid "Right Center"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:88
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:119
-#: inc/customizer-functions.php:544
+#: inc/customizer-functions.php:579
 msgid "Right Bottom"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:89
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:120
-#: inc/customizer-functions.php:545
+#: inc/customizer-functions.php:580
 msgid "Center Top"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:90
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:121
-#: inc/customizer-functions.php:546
+#: inc/customizer-functions.php:581
 msgid "Center Center"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:91
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:122
-#: inc/customizer-functions.php:547
+#: inc/customizer-functions.php:582
 msgid "Center Bottom"
 msgstr ""
 
@@ -155,22 +156,22 @@ msgid "Contain"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:106
-#: inc/customizer-functions.php:724
+#: inc/customizer-functions.php:759
 msgid "Auto"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:113
-#: inc/customizer-functions.php:562
+#: inc/customizer-functions.php:597
 msgid "Background Attachment"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:116
-#: inc/customizer-functions.php:567
+#: inc/customizer-functions.php:602
 msgid "Scroll"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-background.php:119
-#: inc/customizer-functions.php:568
+#: inc/customizer-functions.php:603
 msgid "Fixed"
 msgstr ""
 
@@ -248,20 +249,20 @@ msgstr ""
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:131
 #: admin/kirki/controls/php/class-kirki-control-typography.php:151
 #: admin/kirki/field/class-kirki-field-spacing.php:34
-#: inc/customizer-functions.php:122
+#: inc/customizer-functions.php:157
 msgid "Left"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:132
 #: admin/kirki/controls/php/class-kirki-control-typography.php:163
 #: admin/kirki/field/class-kirki-field-spacing.php:35
-#: inc/customizer-functions.php:123
+#: inc/customizer-functions.php:158
 msgid "Right"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:133
 #: admin/kirki/controls/php/class-kirki-control-typography.php:157
-#: inc/customizer-functions.php:121
+#: inc/customizer-functions.php:156
 msgid "Center"
 msgstr ""
 
@@ -278,7 +279,7 @@ msgid "Width"
 msgstr ""
 
 #: admin/kirki/controls/php/class-kirki-control-dimensions.php:137
-#: inc/customizer-functions.php:338 inc/customizer-functions.php:496
+#: inc/customizer-functions.php:373 inc/customizer-functions.php:531
 msgid "Height"
 msgstr ""
 
@@ -1210,441 +1211,488 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: functions.php:212
-msgid "Header Menu"
+#: functions.php:140
+msgid "Blog Sidebar"
 msgstr ""
 
-#: functions.php:213
-msgid "Footer Menu"
+#: functions.php:141 inc/sierra-functions.php:1086
+msgid "Footer One"
 msgstr ""
 
-#: home.php:12
-msgid "main"
+#: functions.php:142 inc/sierra-functions.php:1101
+msgid "Footer Two"
 msgstr ""
 
-#: inc/customizer-functions.php:15
-msgid "WP Sierra Theme"
+#: functions.php:143 inc/sierra-functions.php:1115
+msgid "Footer Three"
 msgstr ""
 
-#: inc/customizer-functions.php:28
-msgid "General Options"
+#: functions.php:144 inc/sierra-functions.php:1129
+msgid "Footer Four"
 msgstr ""
 
-#: inc/customizer-functions.php:29
-msgid "There are general theme options."
+#: functions.php:186
+msgid "Pale Pink"
 msgstr ""
 
-#: inc/customizer-functions.php:35
+#: functions.php:192
+msgid "Vivid Red"
+msgstr ""
+
+#: functions.php:198
+msgid "Luminous vivid orange"
+msgstr ""
+
+#: functions.php:204
+msgid "Luminous vivid amber"
+msgstr ""
+
+#: functions.php:210
+msgid "Light green cyan"
+msgstr ""
+
+#: functions.php:216
+msgid "Vivid green cyan"
+msgstr ""
+
+#: functions.php:222
+msgid "Pale cyan blue"
+msgstr ""
+
+#: functions.php:228
+msgid "Vivid cyan blue"
+msgstr ""
+
+#: functions.php:234
+msgid "Very light gray"
+msgstr ""
+
+#: functions.php:240
+msgid "Very dark gray"
+msgstr ""
+
+#: functions.php:246 inc/customizer-functions.php:70
 msgid "Accent Color"
 msgstr ""
 
-#: inc/customizer-functions.php:70
+#: functions.php:305
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:306
+msgid "Footer Menu"
+msgstr ""
+
+#: home.php:13
+msgid "main"
+msgstr ""
+
+#: inc/customizer-functions.php:16
+msgid "WP Sierra Theme"
+msgstr ""
+
+#: inc/customizer-functions.php:29
+msgid "General Options"
+msgstr ""
+
+#: inc/customizer-functions.php:30
+msgid "There are general theme options."
+msgstr ""
+
+#: inc/customizer-functions.php:53
+msgid "Foreground Color"
+msgstr ""
+
+#: inc/customizer-functions.php:105
 msgid "Header Overlay Color"
 msgstr ""
 
-#: inc/customizer-functions.php:86 inc/customizer-functions.php:897
+#: inc/customizer-functions.php:121 inc/customizer-functions.php:932
 msgid "Corner Radius"
 msgstr ""
 
-#: inc/customizer-functions.php:87
+#: inc/customizer-functions.php:122
 msgid ""
 "Corner radius for theme elements like: images, input, textara or select "
 "fields."
 msgstr ""
 
-#: inc/customizer-functions.php:98
+#: inc/customizer-functions.php:133
 msgid "Webfonts Load Method"
 msgstr ""
 
-#: inc/customizer-functions.php:103
+#: inc/customizer-functions.php:138
 msgid "Link"
 msgstr ""
 
-#: inc/customizer-functions.php:104
+#: inc/customizer-functions.php:139
 msgid "Async"
 msgstr ""
 
-#: inc/customizer-functions.php:109
+#: inc/customizer-functions.php:144
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer-functions.php:110
+#: inc/customizer-functions.php:145
 msgid "There are header theme options."
 msgstr ""
 
-#: inc/customizer-functions.php:116
+#: inc/customizer-functions.php:151
 msgid "Header Layout"
 msgstr ""
 
-#: inc/customizer-functions.php:129 inc/customizer-functions.php:694
+#: inc/customizer-functions.php:164 inc/customizer-functions.php:729
 msgid "Logo Upload"
 msgstr ""
 
-#: inc/customizer-functions.php:136
+#: inc/customizer-functions.php:171
 msgid "Alternative Logo Upload"
 msgstr ""
 
-#: inc/customizer-functions.php:137
+#: inc/customizer-functions.php:172
 msgid "Use for transparent header in Page Settings when edit your page"
 msgstr ""
 
-#: inc/customizer-functions.php:144
+#: inc/customizer-functions.php:179
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/customizer-functions.php:160
+#: inc/customizer-functions.php:195
 msgid "Header Shadow"
 msgstr ""
 
-#: inc/customizer-functions.php:165 inc/customizer-functions.php:236
-#: inc/customizer-functions.php:259 inc/customizer-functions.php:296
-#: inc/customizer-functions.php:314 inc/customizer-functions.php:385
-#: inc/customizer-functions.php:402 inc/customizer-functions.php:419
-#: inc/customizer-functions.php:472 inc/customizer-functions.php:521
-#: inc/customizer-functions.php:588 inc/customizer-functions.php:605
-#: inc/customizer-functions.php:645 inc/customizer-functions.php:657
-#: inc/customizer-functions.php:669
+#: inc/customizer-functions.php:200 inc/customizer-functions.php:271
+#: inc/customizer-functions.php:294 inc/customizer-functions.php:331
+#: inc/customizer-functions.php:349 inc/customizer-functions.php:420
+#: inc/customizer-functions.php:437 inc/customizer-functions.php:454
+#: inc/customizer-functions.php:507 inc/customizer-functions.php:556
+#: inc/customizer-functions.php:623 inc/customizer-functions.php:640
+#: inc/customizer-functions.php:680 inc/customizer-functions.php:692
+#: inc/customizer-functions.php:704
 msgid "Enable"
 msgstr ""
 
-#: inc/customizer-functions.php:166 inc/customizer-functions.php:237
-#: inc/customizer-functions.php:260 inc/customizer-functions.php:297
-#: inc/customizer-functions.php:315 inc/customizer-functions.php:386
-#: inc/customizer-functions.php:403 inc/customizer-functions.php:420
-#: inc/customizer-functions.php:473 inc/customizer-functions.php:522
-#: inc/customizer-functions.php:589 inc/customizer-functions.php:606
-#: inc/customizer-functions.php:646 inc/customizer-functions.php:658
-#: inc/customizer-functions.php:670
+#: inc/customizer-functions.php:201 inc/customizer-functions.php:272
+#: inc/customizer-functions.php:295 inc/customizer-functions.php:332
+#: inc/customizer-functions.php:350 inc/customizer-functions.php:421
+#: inc/customizer-functions.php:438 inc/customizer-functions.php:455
+#: inc/customizer-functions.php:508 inc/customizer-functions.php:557
+#: inc/customizer-functions.php:624 inc/customizer-functions.php:641
+#: inc/customizer-functions.php:681 inc/customizer-functions.php:693
+#: inc/customizer-functions.php:705
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer-functions.php:172
+#: inc/customizer-functions.php:207
 msgid "Header Shadow Color"
 msgstr ""
 
-#: inc/customizer-functions.php:194
+#: inc/customizer-functions.php:229
 msgid "Text and icons color"
 msgstr ""
 
-#: inc/customizer-functions.php:214
+#: inc/customizer-functions.php:249
 msgid "Alternative text and icons color"
 msgstr ""
 
-#: inc/customizer-functions.php:215
-msgid "Use for transparent headers"
-msgstr ""
-
-#: inc/customizer-functions.php:231
-msgid "Search Icon"
-msgstr ""
-
-#: inc/customizer-functions.php:242
-msgid "Blog"
-msgstr ""
-
-#: inc/customizer-functions.php:243
-msgid "There are blog theme options."
-msgstr ""
-
-#: inc/customizer-functions.php:247
-msgid "Archive Blog Options"
-msgstr ""
-
-#: inc/customizer-functions.php:254
-msgid "Archive Title"
+#: inc/customizer-functions.php:250
+msgid "Use for transparent headers with alternative logo"
 msgstr ""
 
 #: inc/customizer-functions.php:266
-msgid "Archive Style"
+msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer-functions.php:271
-msgid "Modern"
-msgstr ""
-
-#: inc/customizer-functions.php:272
-msgid "Lines"
+#: inc/customizer-functions.php:277
+msgid "Blog"
 msgstr ""
 
 #: inc/customizer-functions.php:278
+msgid "There are blog theme options."
+msgstr ""
+
+#: inc/customizer-functions.php:282
+msgid "Archive Blog Options"
+msgstr ""
+
+#: inc/customizer-functions.php:289
+msgid "Archive Title"
+msgstr ""
+
+#: inc/customizer-functions.php:301
+msgid "Archive Style"
+msgstr ""
+
+#: inc/customizer-functions.php:306
+msgid "Modern"
+msgstr ""
+
+#: inc/customizer-functions.php:307
+msgid "Lines"
+msgstr ""
+
+#: inc/customizer-functions.php:313
 msgid "Archive Columns"
 msgstr ""
 
-#: inc/customizer-functions.php:283
+#: inc/customizer-functions.php:318
 msgid "1 Column"
 msgstr ""
 
-#: inc/customizer-functions.php:284
+#: inc/customizer-functions.php:319
 msgid "2 Columns"
 msgstr ""
 
-#: inc/customizer-functions.php:285
+#: inc/customizer-functions.php:320
 msgid "3 Columns"
 msgstr ""
 
-#: inc/customizer-functions.php:291
+#: inc/customizer-functions.php:326
 msgid "Read More Button"
 msgstr ""
 
-#: inc/customizer-functions.php:302
+#: inc/customizer-functions.php:337
 msgid "Archive Blog Header"
 msgstr ""
 
-#: inc/customizer-functions.php:309 inc/customizer-functions.php:467
+#: inc/customizer-functions.php:344 inc/customizer-functions.php:502
 msgid "Header"
 msgstr ""
 
-#: inc/customizer-functions.php:321 inc/customizer-functions.php:479
+#: inc/customizer-functions.php:356 inc/customizer-functions.php:514
 msgid "Header Height"
 msgstr ""
 
-#: inc/customizer-functions.php:326 inc/customizer-functions.php:484
+#: inc/customizer-functions.php:361 inc/customizer-functions.php:519
 msgid "Custom Height"
 msgstr ""
 
-#: inc/customizer-functions.php:327 inc/customizer-functions.php:485
+#: inc/customizer-functions.php:362 inc/customizer-functions.php:520
 msgid "Fullscreen"
 msgstr ""
 
-#: inc/customizer-functions.php:358
+#: inc/customizer-functions.php:393
 msgid "Header Background"
 msgstr ""
 
-#: inc/customizer-functions.php:380 inc/customizer-functions.php:516
+#: inc/customizer-functions.php:415 inc/customizer-functions.php:551
 msgid "Overlay"
 msgstr ""
 
-#: inc/customizer-functions.php:397 inc/customizer-functions.php:583
+#: inc/customizer-functions.php:432 inc/customizer-functions.php:618
 msgid "Transparent Header"
 msgstr ""
 
-#: inc/customizer-functions.php:414 inc/customizer-functions.php:600
-msgid "Alternative Logo For Transparent Header"
+#: inc/customizer-functions.php:449 inc/customizer-functions.php:635
+msgid "Alternative Logo And Text For Transparent Header"
 msgstr ""
 
-#: inc/customizer-functions.php:435
+#: inc/customizer-functions.php:470
 msgid "Heading Text"
 msgstr ""
 
-#: inc/customizer-functions.php:448
+#: inc/customizer-functions.php:483
 msgid "Tagline Text"
 msgstr ""
 
-#: inc/customizer-functions.php:460
+#: inc/customizer-functions.php:495
 msgid "Single Post Header"
 msgstr ""
 
-#: inc/customizer-functions.php:620
+#: inc/customizer-functions.php:655
 msgid "Single Post Options"
 msgstr ""
 
-#: inc/customizer-functions.php:627
+#: inc/customizer-functions.php:662
 msgid "Post Layout"
 msgstr ""
 
-#: inc/customizer-functions.php:632
+#: inc/customizer-functions.php:667
 msgid "Right Sidebar"
 msgstr ""
 
-#: inc/customizer-functions.php:633
+#: inc/customizer-functions.php:668
 msgid "Left Sidebar"
 msgstr ""
 
-#: inc/customizer-functions.php:634
+#: inc/customizer-functions.php:669
 msgid "No Sidebar"
 msgstr ""
 
-#: inc/customizer-functions.php:640
+#: inc/customizer-functions.php:675
 msgid "About Author"
 msgstr ""
 
-#: inc/customizer-functions.php:652 inc/sierra-functions.php:490
+#: inc/customizer-functions.php:687 inc/sierra-functions.php:500
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer-functions.php:664
+#: inc/customizer-functions.php:699
 msgid "Social Icons"
 msgstr ""
 
-#: inc/customizer-functions.php:675
+#: inc/customizer-functions.php:710
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer-functions.php:681
+#: inc/customizer-functions.php:716
 msgid "Footer Layout"
 msgstr ""
 
-#: inc/customizer-functions.php:687
+#: inc/customizer-functions.php:722
 msgid "Simple"
 msgstr ""
 
-#: inc/customizer-functions.php:688
+#: inc/customizer-functions.php:723
 msgid "4 Columns"
 msgstr ""
 
-#: inc/customizer-functions.php:706
+#: inc/customizer-functions.php:741
 msgid "Logo Width"
 msgstr ""
 
-#: inc/customizer-functions.php:718
+#: inc/customizer-functions.php:753
 msgid "Copyright"
 msgstr ""
 
-#: inc/customizer-functions.php:725
+#: inc/customizer-functions.php:760
 msgid "Custom"
 msgstr ""
 
-#: inc/customizer-functions.php:736
+#: inc/customizer-functions.php:771
 msgid "Copyright text"
 msgstr ""
 
-#: inc/customizer-functions.php:769 inc/customizer-functions.php:825
+#: inc/customizer-functions.php:804 inc/customizer-functions.php:860
 msgid "Text Color"
 msgstr ""
 
-#: inc/customizer-functions.php:787
+#: inc/customizer-functions.php:822
 msgid "Menu Color"
 msgstr ""
 
-#: inc/customizer-functions.php:802
+#: inc/customizer-functions.php:837
 msgid "Buttons"
 msgstr ""
 
-#: inc/customizer-functions.php:803
+#: inc/customizer-functions.php:838
 msgid "There are customize button options."
 msgstr ""
 
-#: inc/customizer-functions.php:841
+#: inc/customizer-functions.php:876
 msgid "Background Color on Hover"
 msgstr ""
 
-#: inc/customizer-functions.php:859
+#: inc/customizer-functions.php:894
 msgid "Text Color on Hover"
 msgstr ""
 
-#: inc/customizer-functions.php:877
+#: inc/customizer-functions.php:912
 msgid "Shadow Color on Hover"
 msgstr ""
 
-#: inc/customizer-functions.php:911
+#: inc/customizer-functions.php:946
 msgid "Vertical Padding"
 msgstr ""
 
-#: inc/customizer-functions.php:934
+#: inc/customizer-functions.php:969
 msgid "Horizontal Padding"
 msgstr ""
 
-#: inc/customizer-functions.php:955
+#: inc/customizer-functions.php:990
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:956
+#: inc/customizer-functions.php:991
 msgid "There are general typography theme options."
 msgstr ""
 
-#: inc/customizer-functions.php:962
+#: inc/customizer-functions.php:997
 msgid "Body Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:963
+#: inc/customizer-functions.php:998
 msgid "Select the main typography options for your site."
 msgstr ""
 
-#: inc/customizer-functions.php:964
+#: inc/customizer-functions.php:999
 msgid "The typography options you set here apply to body class on your site."
 msgstr ""
 
-#: inc/customizer-functions.php:984
+#: inc/customizer-functions.php:1019
 msgid "Headings Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:985
+#: inc/customizer-functions.php:1020
 msgid "Select the all headings font family for your site."
 msgstr ""
 
-#: inc/customizer-functions.php:1000
+#: inc/customizer-functions.php:1035
 msgid "H1 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1020
+#: inc/customizer-functions.php:1055
 msgid "H2 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1040
+#: inc/customizer-functions.php:1075
 msgid "H3 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1065
+#: inc/customizer-functions.php:1100
 msgid "H4 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1085
+#: inc/customizer-functions.php:1120
 msgid "H5 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1105
+#: inc/customizer-functions.php:1140
 msgid "H6 Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1125
+#: inc/customizer-functions.php:1160
 msgid "Paragraph Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1145
+#: inc/customizer-functions.php:1180
 msgid "Blockquote Typography"
 msgstr ""
 
-#: inc/customizer-functions.php:1165
+#: inc/customizer-functions.php:1200
 msgid "Menu Typography"
 msgstr ""
 
-#: inc/footers/footer-4col-widgets.php:13
-msgid "Footer One"
-msgstr ""
-
-#: inc/footers/footer-4col-widgets.php:15
-#: inc/footers/footer-4col-widgets.php:30
-#: inc/footers/footer-4col-widgets.php:44
-#: inc/footers/footer-4col-widgets.php:58 sidebar-blog.php:15
-msgid "Please add your widget here."
-msgstr ""
-
-#: inc/footers/footer-4col-widgets.php:28
-msgid "Footer Two"
-msgstr ""
-
-#: inc/footers/footer-4col-widgets.php:42
-msgid "Footer Three"
-msgstr ""
-
-#: inc/footers/footer-4col-widgets.php:56
-msgid "Footer Four"
-msgstr ""
-
-#: inc/sierra-functions.php:100 searchform.php:13
+#: inc/sierra-functions.php:102 searchform.php:13
 msgid "Search here..."
 msgstr ""
 
-#: inc/sierra-functions.php:122 inc/sierra-functions.php:266
-#: inc/sierra-functions.php:331 inc/sierra-functions.php:387
-#: inc/sierra-functions.php:540 inc/sierra-functions.php:1030
+#: inc/sierra-functions.php:124 inc/sierra-functions.php:276
+#: inc/sierra-functions.php:341 inc/sierra-functions.php:397
+#: inc/sierra-functions.php:550 inc/sierra-functions.php:1048
 msgid "by"
 msgstr ""
 
-#: inc/sierra-functions.php:136
+#: inc/sierra-functions.php:138
 msgid "View all posts by"
 msgstr ""
 
-#: inc/sierra-functions.php:188 inc/sierra-functions.php:206
+#: inc/sierra-functions.php:198 inc/sierra-functions.php:216
 msgid "Read More"
 msgstr ""
 
-#: inc/sierra-functions.php:364 inc/sierra-functions.php:424
+#: inc/sierra-functions.php:374 inc/sierra-functions.php:434
 msgid "no-image"
 msgstr ""
 
-#: inc/sierra-functions.php:853 inc/sierra-functions.php:869
+#: inc/sierra-functions.php:864 inc/sierra-functions.php:880
 msgid "Posts"
+msgstr ""
+
+#: inc/sierra-functions.php:1088 inc/sierra-functions.php:1103
+#: inc/sierra-functions.php:1117 inc/sierra-functions.php:1131
+#: sidebar-blog.php:15
+msgid "Please add your widget here."
 msgstr ""
 
 #. translators: %s: search term
@@ -1667,4 +1715,8 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Themesty"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themesty.com/"
 msgstr ""

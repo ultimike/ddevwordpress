@@ -7,51 +7,46 @@
 	4. Load functions
 	5. Theme Support
 	6. Register menus
+  7. Kirki Customizer options
 */
-// Create a helper function for easy SDK access.
+
 
 if ( ! function_exists( 'wpsierra_fs' ) ) {
-  // Create a helper function for easy SDK access.
-  function wpsierra_fs() {
-      global $wpsierra_fs;
+    // Create a helper function for easy SDK access.
+    function wpsierra_fs() {
+        global $wpsierra_fs;
 
-      if ( ! isset( $wpsierra_fs ) ) {
-          // Include Freemius SDK.
-          require_once dirname(__FILE__) . '/freemius/start.php';
+        if ( ! isset( $wpsierra_fs ) ) {
+            // Include Freemius SDK.
+            require_once dirname(__FILE__) . '/freemius/start.php';
 
-          $wpsierra_fs = fs_dynamic_init( array(
-              'id'                  => '2565',
-              'slug'                => 'wp-sierra',
-              'type'                => 'theme',
-              'public_key'          => 'pk_f008883de2d70aea803633df9636f',
-              'is_premium'          => false,
-              'premium_suffix'      => '',
-              // If your theme is a serviceware, set this option to false.
-              'has_premium_version' => true,
-              'has_addons'          => false,
-              'has_paid_plans'      => false,
-              'menu'                => array(
-              ),
-          ) );
-      }
+            $wpsierra_fs = fs_dynamic_init( array(
+                'id'                  => '2565',
+                'slug'                => 'wp-sierra',
+                'type'                => 'theme',
+                'public_key'          => 'pk_f008883de2d70aea803633df9636f',
+                'is_premium'          => false,
+                'has_addons'          => true,
+                'has_paid_plans'      => false,
+                'menu'                => array(
+                    'slug'           => 'wpsierra',
+                    'contact'        => false,
+                    'support'        => false,
+                    'parent'         => array(
+                        'slug' => 'themes.php',
+                    ),
+                ),
+            ) );
+        }
 
-      return $wpsierra_fs;
-  }
+        return $wpsierra_fs;
+    }
 
-  // Init Freemius.
-  wpsierra_fs();
-  // Signal that SDK was initiated.
-  do_action( 'wpsierra_fs_loaded' );
+    // Init Freemius.
+    wpsierra_fs();
+    // Signal that SDK was initiated.
+    do_action( 'wpsierra_fs_loaded' );}
 
-  function wpsierra_fs_settings_url() {
-      return admin_url( 'themes.php?page=wpsierra' );
-  }
-
-  //wpsierra_fs()->add_filter('connect_url', 'wpsierra_fs_settings_url');
-  wpsierra_fs()->add_filter('after_skip_url', 'wpsierra_fs_settings_url');
-  //wpsierra_fs()->add_filter('after_connect_url', 'wpsierra_fs_settings_url');
-  wpsierra_fs()->add_filter('after_pending_connect_url', 'wpsierra_fs_settings_url');
-}
 
 // 1. Load the Theme CSS
 function wpsierra_styles()
@@ -63,6 +58,7 @@ function wpsierra_styles()
     wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
     wp_enqueue_style( 'wpsierra-main-css', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'wpsierra-theme-css', get_template_directory_uri() . '/css/theme.css' );
+  	wp_add_inline_style( 'wpsierra-theme-css', wpsierra_gutenberg_colors() );
     wp_style_add_data( 'wpsierra-theme-css', 'rtl', 'replace' );
 }
 
@@ -141,11 +137,11 @@ function wpsierra_widgets_init()
     }
 
     //Create widgets
-    create_widget( 'Blog Sidebar', 'blog', 'Displays in the side navigation of blog posts and main blog page' );
-    create_widget( 'Footer One', 'footer-one', 'Displays first footer widget' );
-    create_widget( 'Footer Two', 'footer-two', 'Displays second footer widget' );
-    create_widget( 'Footer Three', 'footer-three', 'Displays third footer widget' );
-    create_widget( 'Footer Four', 'footer-four', 'Displays fourth footer widget' );
+    create_widget( esc_html__( 'Blog Sidebar', 'wp-sierra' ), 'blog', 'Displays in the side navigation of blog posts and main blog page' );
+    create_widget( esc_html__( 'Footer One', 'wp-sierra' ), 'footer-one', 'Displays first footer widget' );
+    create_widget( esc_html__( 'Footer Two', 'wp-sierra' ), 'footer-two', 'Displays second footer widget' );
+    create_widget( esc_html__( 'Footer Three', 'wp-sierra' ), 'footer-three', 'Displays third footer widget' );
+    create_widget( esc_html__( 'Footer Four', 'wp-sierra' ), 'footer-four', 'Displays fourth footer widget' );
 }
 
 // 4. Load functions
@@ -163,12 +159,6 @@ if ( file_exists( dirname( __FILE__ ) . '/admin/tgmpa/required-plugins.php' ) ) 
     get_template_part( 'admin/tgmpa/required-plugins' );
 }
 
-// Kirki Customizer options
-if ( file_exists( dirname( __FILE__ ) . '/admin/kirki/kirki.php' ) ) {
-    require_once get_template_directory() . '/admin/kirki/kirki.php';
-    require_once get_template_directory() . '/inc/customizer-functions.php';
-}
-
 // 5. Theme Support
 add_action( 'after_setup_theme', 'wpsierra_theme_setup' );
 function wpsierra_theme_setup()
@@ -182,6 +172,7 @@ function wpsierra_theme_setup()
     /* Add theme support for post thumbnails (featured images). */
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'align-wide' );
     add_theme_support( 'html5', array(
         'search-form',
         'comment-form',
@@ -189,7 +180,108 @@ function wpsierra_theme_setup()
         'gallery',
         'caption'
     ) );
+    add_theme_support( 'editor-color-palette', array(
+
+        array(
+            'name' => esc_html__( 'Pale Pink', 'wp-sierra' ),
+            'slug' => 'pale-pink',
+            'color' => '#fcf0ef',
+        ),
+
+        array(
+            'name' => esc_html__( 'Vivid Red', 'wp-sierra' ),
+            'slug' => 'vivid-red',
+            'color' => '#cf2e2e',
+        ),
+
+        array(
+            'name' => esc_html__( 'Luminous vivid orange', 'wp-sierra' ),
+            'slug' => 'luminous-vivid-orange',
+            'color' => '#ff6900',
+        ),
+
+        array(
+            'name' => esc_html__( 'Luminous vivid amber', 'wp-sierra' ),
+            'slug' => 'luminous-vivid-amber',
+            'color' => '#fcb900',
+        ),
+
+        array(
+            'name' => esc_html__( 'Light green cyan', 'wp-sierra' ),
+            'slug' => 'light-green-cyan',
+            'color' => '#7bdcb5',
+        ),
+
+        array(
+            'name' => esc_html__( 'Vivid green cyan', 'wp-sierra' ),
+            'slug' => 'vivid-green-cyan',
+            'color' => '#00d084',
+        ),
+
+        array(
+            'name' => esc_html__( 'Pale cyan blue', 'wp-sierra' ),
+            'slug' => 'pale-cyan-blue',
+            'color' => '#8ed1fc',
+        ),
+
+        array(
+            'name' => esc_html__( 'Vivid cyan blue', 'wp-sierra' ),
+            'slug' => 'vivid-cyan-blue',
+            'color' => '#0693e3',
+        ),
+
+        array(
+            'name' => esc_html__( 'Very light gray', 'wp-sierra' ),
+            'slug' => 'very-light-gray',
+            'color' => '#eeeeee',
+        ),
+
+        array(
+            'name' => esc_html__( 'Very dark gray', 'wp-sierra' ),
+            'slug' => 'very-dark-gray',
+            'color' => '#313131',
+        ),
+
+        array(
+            'name' => esc_html__( 'Accent Color', 'wp-sierra' ),
+            'slug' => 'wpsierra-accent',
+            'color' => esc_html( get_theme_mod( 'accent_color', '#2962FF' ) ),
+        ),
+
+    ) );
 }
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+  function wp_body_open() {
+    do_action( 'wp_body_open' );
+  }
+}
+
+
+/**
+ * Add custom colors to Gutenberg.
+ */
+function wpsierra_gutenberg_colors() {
+	// Retrieve the accent color fro the Customizer.
+	$accent = get_theme_mod( 'accent_color', '#2962FF' );
+	// Build styles.
+	$css  = '';
+	$css .= '.has-wpsierra-accent-color { color: ' . esc_attr( $accent ) . ' !important; }';
+	$css .= '.has-wpsierra-accent-background-color { background-color: ' . esc_attr( $accent ) . '; }';
+	return wp_strip_all_tags( $css );
+}
+/**
+ * Enqueue theme styles within Gutenberg.
+ */
+function wpsierra_gutenberg_styles() {
+	// Load the theme styles within Gutenberg.
+	wp_enqueue_style( 'wpsierra-gutenberg', get_theme_file_uri( '/css/gutenberg.css' ), false, '', 'all' );
+	// Add custom colors to Gutenberg.
+	wp_add_inline_style( 'wpsierra-gutenberg', wpsierra_gutenberg_colors() );
+}
+add_action( 'enqueue_block_editor_assets', 'wpsierra_gutenberg_styles' );
+
+
 
 load_theme_textdomain( 'wp-sierra', get_template_directory() . '/languages' );
 //Registers an editor stylesheet for the theme.
@@ -202,6 +294,7 @@ add_action( 'admin_init', 'wpsierra_theme_add_editor_styles' );
 //Shortcodes in excerpt
 add_filter( 'get_the_excerpt', 'shortcode_unautop' );
 add_filter( 'get_the_excerpt', 'do_shortcode' );
+
 // 6. Register menus
 // Register nav menus
 /* Add your nav menus function to the 'init' action hook. */
@@ -212,4 +305,16 @@ function wpsierra_register_menus()
         'header-menu' => esc_html__( 'Header Menu', 'wp-sierra' ),
         'footer-menu' => esc_html__( 'Footer Menu', 'wp-sierra' ),
     ) );
+}
+
+// 7. Kirki Customizer options
+if ( file_exists( dirname( __FILE__ ) . '/admin/kirki/kirki.php' ) ) {
+    require_once get_template_directory() . '/admin/kirki/kirki.php';
+}
+
+// check for plugin using plugin name
+if ( is_plugin_active( 'sierra-addons-pro/sierra-addons.php' ) ) {
+  return;
+} else {
+  require_once get_template_directory() . '/inc/customizer-functions.php';
 }

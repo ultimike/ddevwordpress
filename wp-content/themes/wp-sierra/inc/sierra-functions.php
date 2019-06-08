@@ -34,6 +34,8 @@ add_action( 'admin_init', function () {
         remove_action( 'admin_init', [ \Elementor\Plugin::$instance->admin, 'maybe_redirect_to_getting_started' ] );
     }
 }, 1 );
+
+
 // Add span to the post count in category and arhive widgets
 add_filter( 'wp_list_categories', 'wpsierra_cat_count_span' );
 function wpsierra_cat_count_span( $links )
@@ -93,51 +95,51 @@ function wpsierra_search_full()
 	<div id="sierra-search">
 		<button type="button" class="close"></button>
 			<div class="search-field">
-				<form method="get" action="<?php 
+				<form method="get" action="<?php
     echo  esc_url( home_url() ) ;
     ?>/">
-					<input type="search" placeholder="<?php 
+					<input type="search" placeholder="<?php
     esc_attr_e( 'Search here...', 'wp-sierra' );
     ?>" name="s" id="s2">
 				</form>
 			</div>
 	</div>
-<?php 
+<?php
 }
 
 // WP Sierra About Author
 function wpsierra_about_author()
 {
-    
+
     if ( '1' == get_theme_mod( 'post_about_author', '1' ) ) {
         ?>
 	<div class="container">
 		<div class="single-post-author">
 		<div id="authorarea">
-						<?php 
+						<?php
         echo  get_avatar( get_the_author_meta( 'user_email' ), 400 ) ;
         ?>
 						<div class="authorinfo">
-								<h3 class="author-name"><?php 
+								<h3 class="author-name"><?php
         esc_html_e( 'by', 'wp-sierra' );
-        ?> <?php 
+        ?> <?php
         the_author_meta( 'display_name' );
         ?></h3>
-								<p><?php 
+								<p><?php
         the_author_meta( 'description' );
         ?></p>
 								<div class="author-archives">
-										<?php 
+										<?php
         echo  '<h3 class="author-link widget-title-style">' ;
         ?>
-												<a href="<?php 
+												<a href="<?php
         echo  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ;
-        ?>" rel="author"><?php 
+        ?>" rel="author"><?php
         esc_html_e( 'View all posts by', 'wp-sierra' );
-        ?> <?php 
+        ?> <?php
         the_author_meta( 'display_name' );
         ?></a>
-										<?php 
+										<?php
         echo  '</h3>' ;
         ?>
 								</div>
@@ -145,69 +147,77 @@ function wpsierra_about_author()
 				</div><!--#authorarea-->
 		</div><!--/.single-post-author-->
 	</div><!--/.container-->
-	<?php 
+	<?php
     }
 
 }
 
 add_action( 'wpsierra_post_about_author', 'wpsierra_about_author' );
 //Mobile Menu
-function wpsierra_mobile_menu()
-{
-    ?>
-<div class="mobile-menu">
-		<div class="container">
-				<?php 
-    if ( has_nav_menu( 'header-menu' ) ) {
-        wp_nav_menu( array(
-            'theme_location' => 'header-menu',
-            'menu_class'     => 'menu',
-            'container'      => 'false',
-        ) );
-    }
-    ?>
-		</div><!--/.container-->
-</div><!--/.mobile-menu-->
-
-<?php 
+function wpsierra_mobile_menu() {
+  if ( has_nav_menu( 'header-menu' ) ) {
+?>
+    <div class="sierra-menu">
+      <div id="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div><!--/.sierra-menu-->
+    <div class="mobile-menu">
+    		<div class="container">
+    				<?php
+        if ( has_nav_menu( 'header-menu' ) ) {
+            wp_nav_menu( array(
+                'theme_location' => 'header-menu',
+                'menu_class'     => 'menu',
+                'container'      => 'false',
+            ) );
+        }
+        ?>
+    		</div><!--/.container-->
+    </div><!--/.mobile-menu-->
+<?php
+  }
 }
 
 //Read more button on blog
 function wpsierra_read_more_btn()
 {
-    
+
     if ( class_exists( 'Kirki' ) ) {
-        
+
         if ( '1' == get_theme_mod( 'read_more_button', '1' ) ) {
             ?>
-		<a class="b-btn" href="<?php 
+		<a class="b-btn" href="<?php
             the_permalink();
             ?>" rel="nofollow">
 		<span class="button_text">
-		<?php 
+		<?php
             esc_html_e( 'Read More', 'wp-sierra' );
             ?>
 		</span>
 		</a>
-		<?php 
+		<?php
         } else {
             return;
         }
-        
+
         ?>
- 	<?php 
+ 	<?php
     } else {
         ?>
-		<a class="b-btn" href="<?php 
+		<a class="b-btn" href="<?php
         the_permalink();
         ?>" rel="nofollow">
 		<span class="button_text">
-		<?php 
+		<?php
         esc_html_e( 'Read More', 'wp-sierra' );
         ?>
 		</span>
 		</a>
-	<?php 
+	<?php
     }
 
 }
@@ -222,15 +232,15 @@ function wpsierra_blog_style_modern( $thumb_post )
     ?>
 <div class="sierra-blog-default">
 
-<?php 
-    
+<?php
+
     if ( has_post_thumbnail() ) {
         ?>
 		<div class="p-image">
-			<a href="<?php 
+			<a href="<?php
         the_permalink();
         ?>">
-			<?php 
+			<?php
         the_post_thumbnail( $thumb_post, array(
             'title' => esc_attr( get_the_title() ),
             'alt'   => esc_attr( get_the_title() ),
@@ -238,44 +248,44 @@ function wpsierra_blog_style_modern( $thumb_post )
         ?>
 			</a>
 		</div>
-<?php 
+<?php
     }
-    
+
     ?>
 	<div class="sierra-blog-default-info">
 		<h1 class="post-list-title">
-			<a href="<?php 
+			<a href="<?php
     the_permalink();
-    ?>"><?php 
+    ?>"><?php
     the_title();
     ?></a>
 		</h1>
 		<div class="post-excerpt">
-			<?php 
+			<?php
     the_excerpt();
     ?>
 		</div>
-		<?php 
+		<?php
     wpsierra_read_more_btn();
     ?>
 		<p class="widget-title-style">
-		<?php 
+		<?php
     the_time( get_option( 'date_format' ) );
     ?><span> | </span>
-		<?php 
+		<?php
     esc_html_e( 'by', 'wp-sierra' );
     ?>
-		<a href="<?php 
+		<a href="<?php
     echo  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ;
     ?>" rel="author">
-			<?php 
+			<?php
     echo  get_the_author( get_the_author_meta( 'name' ) ) ;
     ?>
 		</a>
 		</p>
 	</div><!--/.sierra-blog-default-info-->
 </div><!--/.sierra-blog-default-->
-<?php 
+<?php
 }
 
 // Lines Style
@@ -287,15 +297,15 @@ function wpsierra_blog_style_lines( $thumb_post )
     ?>
 <div class="sierra-blog-lines">
 
-<?php 
-    
+<?php
+
     if ( has_post_thumbnail() ) {
         ?>
 		<div class="p-image">
-			<a href="<?php 
+			<a href="<?php
         the_permalink();
         ?>">
-			<?php 
+			<?php
         the_post_thumbnail( $thumb_post, array(
             'title' => esc_attr( get_the_title() ),
             'alt'   => esc_attr( get_the_title() ),
@@ -303,44 +313,44 @@ function wpsierra_blog_style_lines( $thumb_post )
         ?>
 			</a>
 		</div>
-<?php 
+<?php
     }
-    
+
     ?>
 	<div class="sierra-blog-default-info">
 		<h1 class="post-list-title">
-			<a href="<?php 
+			<a href="<?php
     the_permalink();
-    ?>"><?php 
+    ?>"><?php
     the_title();
     ?></a>
 		</h1>
 		<div class="post-excerpt">
-			<?php 
+			<?php
     the_excerpt();
     ?>
 		</div>
-		<?php 
+		<?php
     wpsierra_read_more_btn();
     ?>
 		<p class="widget-title-style">
-		<?php 
+		<?php
     the_time( get_option( 'date_format' ) );
     ?><span> | </span>
-		<?php 
+		<?php
     esc_html_e( 'by', 'wp-sierra' );
     ?>
-		<a href="<?php 
+		<a href="<?php
     echo  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ;
     ?>" rel="author">
-			<?php 
+			<?php
     echo  get_the_author( get_the_author_meta( 'name' ) ) ;
     ?>
 		</a>
 		</p>
 	</div><!--/.sierra-blog-default-info-->
 </div><!--/.sierra-blog-default-->
-<?php 
+<?php
 }
 
 // Blog style 2
@@ -353,8 +363,8 @@ function wpsierra_blog_style_2( $thumb_post )
 <div class="blog-style2">
 
 	<div class="blog-style2-relative">
-	<?php 
-    
+	<?php
+
     if ( has_post_thumbnail( get_the_ID() ) ) {
         the_post_thumbnail( $thumb_post, array(
             'title' => esc_attr( get_the_title() ),
@@ -363,33 +373,33 @@ function wpsierra_blog_style_2( $thumb_post )
     } else {
         echo  '<img src="' . esc_url( get_template_directory_uri() ) . '/images/no-image.gif" alt="' . esc_attr__( 'no-image', 'wp-sierra' ) . '"/>' ;
     }
-    
+
     ?>
-		<a href="<?php 
+		<a href="<?php
     the_permalink();
     ?>">
 		<div class="blog-post-gradient"></div>
 		</a>
 		<div class="blog-style2-info">
-			<h1><a href="<?php 
+			<h1><a href="<?php
     the_permalink();
-    ?>"><?php 
+    ?>"><?php
     the_title();
     ?></a></h1>
-			<div class="blog-style2-excerpt"><?php 
+			<div class="blog-style2-excerpt"><?php
     the_excerpt();
     ?></div>
 			<p class="widget-title-style">
-			<?php 
+			<?php
     the_time( get_option( 'date_format' ) );
     ?><span> | </span>
-		  <?php 
+		  <?php
     esc_html_e( 'by', 'wp-sierra' );
     ?>
-			<a href="<?php 
+			<a href="<?php
     echo  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ;
     ?>" rel="author">
-				<?php 
+				<?php
     echo  get_the_author( get_the_author_meta( 'name' ) ) ;
     ?>
 			</a>
@@ -398,7 +408,7 @@ function wpsierra_blog_style_2( $thumb_post )
 	</div><!--/.blog-style2-relative-->
 
 </div><!--/.blog-style2-->
-<?php 
+<?php
 }
 
 // Blog Style Related
@@ -409,12 +419,12 @@ function wpsierra_blog_style_related( $thumb_post )
     $author_id = $post->post_author;
     ?>
 <div class="blog-style2">
-	<a href="<?php 
+	<a href="<?php
     the_permalink();
     ?>">
 	<div class="blog-style2-relative">
-	<?php 
-    
+	<?php
+
     if ( has_post_thumbnail( get_the_ID() ) ) {
         the_post_thumbnail( $thumb_post, array(
             'title' => esc_attr( get_the_title() ),
@@ -423,18 +433,18 @@ function wpsierra_blog_style_related( $thumb_post )
     } else {
         echo  '<img src="' . esc_url( get_template_directory_uri() ) . '/images/no-image.gif" alt="' . esc_attr__( 'no-image', 'wp-sierra' ) . '"/>' ;
     }
-    
+
     ?>
 		<div class="blog-post-gradient"></div>
 		<div class="blog-style2-info">
-					<h1><?php 
+					<h1><?php
     the_title();
     ?></h1>
 		</div><!--/.blog-style2-info-->
 	</div><!--/.blog-style2-relative-->
 	</a>
 </div><!--/.blog-style2-->
-<?php 
+<?php
 }
 
 // Post tags and social buttons
@@ -446,81 +456,81 @@ function wpsierra_posts_tags()
 		<div class="container" role="main">
 				<div class="row">
 					<div class="col-md-8 col-xs-12">
-						<?php 
-    
+						<?php
+
     if ( has_tag() ) {
         ?>
 							<div class="single-post-tags">
-									<?php 
+									<?php
         the_tags( '', ' <span>|</span> ', '' );
         ?>
 							</div>
-						<?php 
+						<?php
     }
-    
+
     ?>
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<?php 
-    
+						<?php
+
     if ( '1' == get_theme_mod( 'social_icons_post', '1' ) ) {
         ?>
-							<?php 
+							<?php
         do_action( 'wpsierra_single_post_social' );
         ?>
-						<?php 
+						<?php
     }
-    
+
     ?>
 					</div>
 				</div><!-- /.row -->
 		</div><!-- /.container -->
 </div><!--/.sierra-next-post-bg -->
-<?php 
+<?php
 }
 
 // Blog Related Posts
 function wpsierra_blog_related_posts()
 {
-    
+
     if ( '1' == get_theme_mod( 'related_posts', '1' ) ) {
         ?>
 	<div class="container">
-		<h3 class="related-posts"><?php 
+		<h3 class="related-posts"><?php
         esc_html_e( 'Related Posts', 'wp-sierra' );
         ?></h3>
 		<div class="related-posts-standard masonry-container pf-padding">
-		<?php 
+		<?php
         $my_query = new WP_Query( array(
             'post_type'           => 'post',
             'posts_per_page'      => 3,
             'orderby'             => 'rand',
             'ignore_sticky_posts' => 1,
         ) );
-        
+
         if ( $my_query->have_posts() ) {
             while ( $my_query->have_posts() ) {
                 $my_query->the_post();
                 ?>
 		<div class="item col3">
-			<?php 
+			<?php
                 wpsierra_blog_style_related( 'large' );
                 ?>
 		</div><!--/.item-->
 
-		<?php 
+		<?php
             }
             ?>
 
-		<?php 
+		<?php
             wp_reset_query();
             ?>
 
 		</div><!--/.related-posts-standard-->
 	</div><!--/.container-->
-	<?php 
+	<?php
         }
-    
+
     }
 
 }
@@ -533,23 +543,23 @@ function wpsierra_single_post_info()
     $author_id = $post->post_author;
     ?>
 	<h3 class="widget-title-style single-post-info-bottom">
-		<?php 
+		<?php
     the_time( get_option( 'date_format' ) );
     ?><span> | </span>
-	  <?php 
+	  <?php
     esc_html_e( 'by', 'wp-sierra' );
-    ?> <a href="<?php 
+    ?> <a href="<?php
     echo  esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ;
-    ?>" rel="author"><?php 
+    ?>" rel="author"><?php
     echo  get_the_author( get_the_author_meta( 'name' ) ) ;
     ?></a>
 	</h3>
 	<span class="single-post-categories">
-		<?php 
+		<?php
     the_category( ' ' );
     ?>
 	</span>
-	<?php 
+	<?php
 }
 
 // Single post title
@@ -564,13 +574,13 @@ function wpsierra_single_post_title()
 function wpsierra_featured_image()
 {
     global  $post ;
-    
+
     if ( has_post_thumbnail( $post->ID ) ) {
         ?>
-		<div class="featured-image"><?php 
+		<div class="featured-image"><?php
         the_post_thumbnail( 'large' );
         ?></div>
-	<?php 
+	<?php
     }
 
 }
@@ -583,47 +593,47 @@ function wpsierra_single_post_area()
 
 	<div class="single-post-area-info">
 
-		<?php 
-    
+		<?php
+
     if ( class_exists( 'Kirki' ) ) {
-        
+
         if ( '0' == get_theme_mod( 'enable_single_post_header', '0' ) ) {
             ?>
 				<div class="single-post-info">
-					<?php 
+					<?php
             wpsierra_single_post_title();
             ?>
-					<?php 
+					<?php
             wpsierra_single_post_info();
             ?>
 				</div>
-				<?php 
+				<?php
             wpsierra_featured_image();
             ?>
-				<?php 
+				<?php
         }
-    
+
     } else {
         ?>
 			<div class="single-post-info">
-				<?php 
+				<?php
         wpsierra_single_post_title();
         ?>
-				<?php 
+				<?php
         wpsierra_single_post_info();
         ?>
 			</div>
-			<?php 
+			<?php
         wpsierra_featured_image();
         ?>
-			<?php 
+			<?php
     }
-    
+
     get_template_part( 'content', get_post_format() );
     ?>
 
 	</div><!--/.single-post-area-info-->
-<?php 
+<?php
 }
 
 // WP Sierra logo
@@ -631,68 +641,68 @@ function wpsierra_logo()
 {
     $logo_url = get_theme_mod( 'logo_url' );
     $alternative_logo = get_theme_mod( 'alternative_logo_url' );
-    
+
     if ( !empty($alternative_logo) ) {
         ?>
 	<div class="sierra-brand-alternative">
-		<a href="<?php 
+		<a href="<?php
         echo  esc_url( home_url() ) ;
         ?>">
-			<img src="<?php 
+			<img src="<?php
         echo  esc_url( $alternative_logo ) ;
-        ?>" alt="<?php 
+        ?>" alt="<?php
         bloginfo( 'name' );
         ?>">
 		</a>
 	</div><!--/.sierra-brand-alternative-->
-  <?php 
+  <?php
     } else {
         ?>
 		<div class="sierra-brand-title sierra-brand-alternative">
-			<a href="<?php 
+			<a href="<?php
         echo  esc_url( home_url() ) ;
         ?>">
-				<?php 
+				<?php
         bloginfo( 'name' );
         ?>
 			</a>
 		</div><!--/.sierra-brand-alternative-->
-	<?php 
+	<?php
     }
-    
+
     ?>
-	<?php 
-    
+	<?php
+
     if ( !empty($logo_url) ) {
         ?>
 	<div class="sierra-brand">
-		<a href="<?php 
+		<a href="<?php
         echo  esc_url( home_url() ) ;
         ?>">
-			<img src="<?php 
+			<img src="<?php
         echo  esc_url( $logo_url ) ;
-        ?>" alt="<?php 
+        ?>" alt="<?php
         bloginfo( 'name' );
         ?>">
 		</a>
 	</div><!--/.sierra-brand-->
-	<?php 
+	<?php
     } else {
         ?>
 	<div class="sierra-brand-title sierra-brand">
-		<a href="<?php 
+		<a href="<?php
         echo  esc_url( home_url() ) ;
-        ?>"><?php 
+        ?>"><?php
         bloginfo( 'name' );
         ?></a>
 	</div><!--/.sierra-brand-title-->
-	<?php 
+	<?php
     }
 
 }
 
 // WP Sierra header classes
-function wpsierra_header_classes()
+function wpsierra_add_header_classes()
 {
     global  $wp_query ;
     $page_id = $wp_query->get_queried_object_id();
@@ -716,34 +726,35 @@ function wpsierra_header_classes()
     if ( 1 == $archive_transparent_header && 1 == $archive_header && is_home() ) {
         $classes .= ' sierra-header-transparent top';
     }
-    if ( 1 == $archive_alternative_logo && 1 == $archive_header && !empty($alternative_logo) && is_home() ) {
+    if ( 1 == $archive_alternative_logo && 1 == $archive_header && is_home() ) {
         $classes .= ' sierra-alternative-logo';
     }
     // For Single Page Header
     if ( 'true' == get_post_meta( $page_id, 'page_transparent_header', true ) ) {
         $classes .= ' sierra-header-transparent top';
     }
-    if ( 'true' == get_post_meta( $page_id, 'page_alternative_logo', true ) && !empty($alternative_logo) ) {
+    if ( 'true' == get_post_meta( $page_id, 'page_alternative_logo', true ) ) {
         $classes .= ' sierra-alternative-logo';
     }
     // For All Headers
     if ( 1 == $header_shadow ) {
         $classes .= ' sierra-header-shadow';
     }
-    return $classes;
+    echo esc_attr( $classes );
 }
+add_action( 'wpsierra_header_classes', 'wpsierra_add_header_classes' );
 
 // Archive Blog Header
 function wpsierra_archive_blog_header()
 {
     global  $wp_query ;
     $page_id = $wp_query->get_queried_object_id();
-    
+
     if ( class_exists( 'Kirki' ) ) {
         $archive_transparent_header = get_theme_mod( 'enable_archive_header_transparent', '1' );
         $archive_header = get_theme_mod( 'enable_archive_blog_header', '1' );
         $archive_header_height = get_theme_mod( 'archive_header_height', 'custom' );
-        
+
         if ( '1' == get_theme_mod( 'enable_archive_blog_header', '1' ) ) {
             $header_class = 'archive-blog-header';
             if ( 'full' == $archive_header_height ) {
@@ -756,56 +767,49 @@ function wpsierra_archive_blog_header()
                 $header_class .= ' blog-header-transparent';
             }
             ?>
-	<div class="<?php 
+	<div class="<?php
             echo  esc_attr( $header_class ) ;
             ?>">
-		<?php 
+		<?php
             if ( '1' == get_theme_mod( 'enable_blog_header_overlay', '0' ) ) {
                 ?>
 		<div class="blog-header-overlay"></div>
-		<?php 
+		<?php
             }
             ?>
 		<div class="archive-blog-header-title">
 		<div class="container">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<?php 
-            
-            if ( get_theme_mod( 'blog_heading_text', '' ) ) {
-                ?>
-					<h1><?php 
-                echo  esc_html( get_theme_mod( 'blog_heading_text' ) ) ;
-                ?></h1>
-				<?php 
-            } else {
-                ?>
-					<h1><?php 
-                bloginfo( 'description' );
-                ?></h1>
-				<?php 
-            }
-            
-            ?>
-				<?php 
-            
-            if ( get_theme_mod( 'blog_tagline_text', '' ) ) {
-                ?>
-					<h2><?php 
-                echo  esc_html( get_theme_mod( 'blog_tagline_text' ) ) ;
-                ?></h2>
-				<?php 
-            }
-            
-            ?>
+				<?php
+        if ( get_theme_mod ( 'archive_blog_header_tagline', '1' ) ) {
+          ?>
+  				<h1><?php bloginfo( 'description' ); ?></h1>
+  				<?php
+
+        } else {
+
+          if ( get_theme_mod( 'blog_heading_text', '' ) ) {
+          ?>
+  					<h1><?php echo  esc_html( get_theme_mod( 'blog_heading_text' ) ) ;?></h1>
+  				<?php
+          }
+          if ( get_theme_mod( 'blog_tagline_text', '' ) ) {
+          ?>
+  				<h2><?php echo  esc_html( get_theme_mod( 'blog_tagline_text' ) ) ; ?></h2>
+  				<?php
+          }
+        }
+
+        ?>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
 		</div>
 	</div>
-	<?php 
+	<?php
         }
-    
+
     } else {
         ?>
 		<div class="archive-blog-header sierra-blog-header-default blog-header-transparent">
@@ -813,7 +817,7 @@ function wpsierra_archive_blog_header()
 			<div class="container">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-						<h1><?php 
+						<h1><?php
         bloginfo( 'description' );
         ?></h1>
 				</div>
@@ -821,7 +825,7 @@ function wpsierra_archive_blog_header()
 			</div>
 			</div>
 		</div>
-	<?php 
+	<?php
     }
 
 }
@@ -831,75 +835,78 @@ function wpsierra_archive_blog_title()
 {
     global  $wp_query ;
     $page_id = $wp_query->get_queried_object_id();
-    
+
     if ( class_exists( 'Kirki' ) ) {
-        
+
         if ( 'true' == get_theme_mod( 'enable_archive_blog_title', 'true' ) ) {
             ?>
-		<?php 
-            
+		<?php
+
             if ( is_home() && !is_front_page() ) {
                 ?>
 			<div class="page-header">
-				<h1 class="entry-title"><?php 
+				<h1 class="entry-title"><?php
                 single_post_title();
                 ?></h1>
 			</div>
-		<?php 
+		<?php
             } else {
                 ?>
 		<div class="page-header">
-			<h1 class="entry-title"><?php 
+			<h1 class="entry-title"><?php
                 esc_html_e( 'Posts', 'wp-sierra' );
                 ?></h1>
 		</div>
-		<?php 
+		<?php
             }
-            
+
             ?>
-	<?php 
+	<?php
         }
-        
+
         ?>
-	<?php 
+	<?php
     } else {
         ?>
 	<div class="page-header">
-		<h1 class="entry-title"><?php 
+		<h1 class="entry-title"><?php
         esc_html_e( 'Posts', 'wp-sierra' );
         ?></h1>
 	</div>
-	<?php 
+	<?php
     }
-    
+
     ?>
 	<div class="page-margin-top"></div>
-<?php 
+<?php
 }
 
 function wpsierra_archive_blog_columns()
 {
-    
+
     if ( class_exists( 'Kirki' ) ) {
         $columns = get_theme_mod( 'archive_boxed_columns', 'col2' );
     } else {
-        $columns = 'col2';
+        $columns = 'col3';
     }
-    
-    return $columns;
+
+    echo esc_attr( $columns );
 }
 
-function wpsierra_archive_blog_width()
-{
-    $blog_width = 'container';
-    return $blog_width;
+add_action( 'wpsierra_archive_columns', 'wpsierra_archive_blog_columns' );
+
+function wpsierra_archive_blog_width() {
+  $blog_width = 'container';
+  echo esc_attr( $blog_width );
 }
+
+add_action( 'wpsierra_container_width', 'wpsierra_archive_blog_width' );
 
 function wpsierra_archive_blog_style()
 {
-    
+
     if ( class_exists( 'Kirki' ) ) {
-        
+
         if ( 'modern' == get_theme_mod( 'archive_blog_layout' ) ) {
             wpsierra_blog_style_modern( 'large' );
         } elseif ( 'lines' == get_theme_mod( 'archive_blog_layout' ) ) {
@@ -907,18 +914,20 @@ function wpsierra_archive_blog_style()
         } else {
             wpsierra_blog_style_modern( 'large' );
         }
-    
+
     } else {
         wpsierra_blog_style_modern( 'large' );
     }
 
 }
 
+add_action( 'wpsierra_post_style', 'wpsierra_archive_blog_style' );
+
 function wpsierra_archive_blog_margin()
 {
-    
+
     if ( class_exists( 'Kirki' ) ) {
-        
+
         if ( 'modern' == get_theme_mod( 'archive_blog_layout' ) ) {
             $blog_margin = 'pf-padding';
         } elseif ( 'lines' == get_theme_mod( 'archive_blog_layout' ) ) {
@@ -926,24 +935,26 @@ function wpsierra_archive_blog_margin()
         } else {
             $blog_margin = 'pf-padding';
         }
-    
+
     } else {
         $blog_margin = 'pf-padding';
     }
-    
-    return $blog_margin;
+
+    echo esc_attr( $blog_margin );
 }
 
+add_action( 'wpsierra_masonry_blog_class', 'wpsierra_archive_blog_margin' );
+
 // Single Post Header
-function wpsierra_single_post_header()
+function wpsierra_add_single_post_header()
 {
     global  $wp_query ;
     global  $post ;
     $page_id = $wp_query->get_queried_object_id();
-    
-    if ( class_exists( 'Kirki' ) ) {
+
+    if ( class_exists( 'Kirki' ) && is_singular( 'post' ) ) {
         $post_header_height = get_theme_mod( 'post_header_height', 'full' );
-        
+
         if ( 'true' == get_theme_mod( 'enable_single_post_header' ) ) {
             $header_class = 'post-header';
             if ( 'full' == $post_header_height ) {
@@ -953,40 +964,40 @@ function wpsierra_single_post_header()
                 $header_class .= ' post-header-transparent';
             }
             ?>
-			<?php 
-            
+			<?php
+
             if ( has_post_thumbnail() ) {
                 ?>
-			<div class="<?php 
+			<div class="<?php
                 echo  esc_attr( $header_class ) ;
-                ?>" style="background-image: url(<?php 
+                ?>" style="background-image: url(<?php
                 the_post_thumbnail_url();
                 ?>)">
-			<?php 
+			<?php
             } else {
                 ?>
-			<div class="<?php 
+			<div class="<?php
                 echo  esc_attr( $header_class ) ;
                 ?>">
-			<?php 
+			<?php
             }
-            
+
             ?>
-				<?php 
+				<?php
             if ( 'true' == get_theme_mod( 'enable_post_header_overlay', 'true' ) ) {
                 ?>
 				<div class="post-header-overlay"></div>
-				<?php 
+				<?php
             }
             ?>
 				<div class="post-header-title">
 				<div class="container">
 					<div class="col-md-1"></div>
 					<div class="col-md-10">
-							<h1><?php 
+							<h1><?php
             single_post_title();
             ?></h1>
-							<?php 
+							<?php
             wpsierra_single_post_info();
             ?>
 					</div>
@@ -994,12 +1005,12 @@ function wpsierra_single_post_header()
 				</div>
 				</div>
 			</div>
-	<?php 
+	<?php
         }
-    
-    }
 
+    }
 }
+add_action( 'wpsierra_single_post_header', 'wpsierra_add_single_post_header' );
 
 // WP Sierra Copyright
 function wpsierra_copyright()
@@ -1007,7 +1018,7 @@ function wpsierra_copyright()
     global  $wpdb ;
     $copyright_dates = $wpdb->get_results( "SELECT YEAR(min(post_date_gmt)) AS firstdate, YEAR(max(post_date_gmt)) AS lastdate FROM {$wpdb->posts} WHERE post_status = 'publish'" );
     $output = '';
-    
+
     if ( $copyright_dates ) {
         $copyright = "&copy; " . $copyright_dates[0]->firstdate;
         if ( $copyright_dates[0]->firstdate != $copyright_dates[0]->lastdate ) {
@@ -1015,7 +1026,7 @@ function wpsierra_copyright()
         }
         $output = $copyright;
     }
-    
+
     return $output;
 }
 
@@ -1024,18 +1035,18 @@ function wpsierra_default_copyright()
 {
     ?>
 	<p>
-		<?php 
+		<?php
     echo  esc_html( wpsierra_copyright() ) ;
-    ?> <?php 
+    ?> <?php
     esc_html_e( 'by', 'wp-sierra' );
-    ?> <?php 
+    ?> <?php
     bloginfo( 'name' );
     ?>.
-		<?php 
+		<?php
     echo  wp_kses_post( ' Powered by <a href="' . esc_url( 'https://wpsierra.com' ) . '" target="_blank"> WP Sierra </a>Wordpress Theme', 'wp-sierra' ) ;
     ?>
 	</p>
-<?php 
+<?php
 }
 
 // WP Sierra Body Class
@@ -1048,3 +1059,149 @@ function wpsierra_body_class( $classes )
     }
     return $classes;
 }
+
+//Footer simple layout
+
+function wpsierra_footer_4col_layout() {
+  ?>
+
+  <div class="footer">
+
+  	<div class="container">
+
+  		<div class="row">
+
+  			<div class="col-md-3 col-xs-12">
+  			<?php if ( dynamic_sidebar( 'footer-one' ) ) :
+  			else :
+  			?>
+  				<div class="widget">
+  					<h3 class="widget-title-style"><?php esc_html_e( 'Footer One', 'wp-sierra' ); ?></h3>
+  					<a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>">
+  							<p><?php esc_html_e( 'Please add your widget here.', 'wp-sierra' ); ?></p>
+  					</a>
+  				</div>
+
+  			<?php endif; ?>
+
+  		</div><!-- col-sm-2 -->
+
+  			<div class="col-md-3 col-xs-12">
+  			<?php if ( dynamic_sidebar( 'footer-two' ) ) : ?>
+  			<?php else : ?>
+
+  				<div class="widget">
+  					<h3 class="widget-title-style"><?php esc_html_e( 'Footer Two', 'wp-sierra' ); ?></h3>
+  					<a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>">
+  							<p><?php esc_html_e( 'Please add your widget here.', 'wp-sierra' ); ?></p>
+  					</a>
+  				</div>
+
+  			<?php endif; ?>
+  		</div><!-- col-sm-2 -->
+
+  			<div class="col-md-3 col-xs-12">
+  			<?php if ( dynamic_sidebar( 'footer-three' ) ) : ?>
+  			<?php else : ?>
+
+  				<div class="widget">
+  					<h3 class="widget-title-style"><?php esc_html_e( 'Footer Three', 'wp-sierra' ); ?></h3>
+  					<a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>">
+  							<p><?php esc_html_e( 'Please add your widget here.', 'wp-sierra' ); ?></p>
+  					</a>
+  				</div>
+
+  				<?php endif; ?>
+  			</div><!-- col-sm-2 -->
+
+  			<div class="col-md-3 col-xs-12">
+  				<?php if ( dynamic_sidebar( 'footer-four' ) ) : ?>
+  				<?php else : ?>
+
+  				<div class="widget">
+  						<h3 class="widget-title-style"><?php esc_html_e( 'Footer Four', 'wp-sierra' ); ?></h3>
+  						<a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>">
+  								<p><?php esc_html_e( 'Please add your widget here.', 'wp-sierra' ); ?></p>
+  						</a>
+  				</div>
+
+  			<?php endif; ?>
+  		</div><!-- col-sm-2 -->
+
+  		</div><!-- /.row -->
+  	</div> <!-- /.container -->
+  </div><!-- /.footer -->
+  <?php
+}
+
+function wpsierra_footer_simple_layout() {
+  ?>
+
+  <div class="footer simple-footer">
+
+  		<div class="container">
+
+  		<div class="row">
+  			<div class="col-md-12">
+  				<?php
+  				$footer_logo = get_theme_mod( 'footer_logo' );
+  				$copyright_select = get_theme_mod( 'copyright_select', 'auto' );
+  				$copyright_description = get_theme_mod( 'copy_description' );
+  				if ( get_theme_mod( 'footer_logo_width' ) ) {
+  					$logo_width = 'width=' . esc_attr( get_theme_mod( 'footer_logo_width' ) ) . '';
+  				} else {
+  					$logo_width = null;
+  				}
+  				?>
+
+  					<?php if ( ! empty( $footer_logo ) ) : ?>
+  					<div class="footer-logo">
+  						<a href="<?php echo esc_url( home_url() ); ?>">
+  							<img src="<?php echo esc_url( $footer_logo ); ?>" alt="<?php bloginfo( 'name' ); ?>" <?php echo esc_attr( $logo_width ); ?>>
+  						</a>
+  					</div><!--/.footer-logo -->
+  					<?php endif; ?>
+
+  					<?php
+  					if ( has_nav_menu( 'footer-menu' ) ) {
+  							wp_nav_menu(
+  								array(
+  									'theme_location' => 'footer-menu',
+  									'menu_class' => 'menu footer-menu',
+  									'container'  => 'false',
+  								)
+  							);
+  					}
+  					?>
+  					<?php if ( 'auto' == $copyright_select ) : ?>
+  					<div class="footer-copyright">
+  						<?php echo wpsierra_default_copyright(); ?>
+  					</div>
+  					<?php elseif ( 'custom' == $copyright_select && ! empty( $copyright_description ) ) : ?>
+  					<div class="footer-copyright">
+  						<p><?php echo wp_kses_post( $copyright_description ); ?></p>
+  					</div>
+  					<?php endif; ?>
+
+
+  			</div><!-- col-sm-12 -->
+
+
+  		</div><!-- /.row -->
+  	</div> <!-- /.container -->
+  </div><!-- /.footer -->
+  <?php
+}
+
+function wpsierra_choose_footer_layout() {
+  if ( class_exists( 'Kirki' ) ) {
+    $footer_layout = get_theme_mod( 'footer_layout', 'simple' );
+    if ( 'simple' == $footer_layout ) {
+      wpsierra_footer_simple_layout();
+    } elseif ( '4col-widgets' == $footer_layout ) {
+      wpsierra_footer_4col_layout();
+    }
+  }
+}
+
+add_action( 'wpsierra_footer_layout', 'wpsierra_choose_footer_layout' );

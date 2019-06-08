@@ -25,10 +25,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 
 <header>
 
-	<div class="sierra-header <?php echo esc_attr( wpsierra_header_classes() ); ?>" data-scroll-up="350">
+	<div class="sierra-header <?php do_action( 'wpsierra_header_classes' ); ?>" data-scroll-up="350">
 		<div class="container-fluid sierra-header-style">
 		<?php
 		if ( class_exists( 'Kirki' ) ) {

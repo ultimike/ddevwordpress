@@ -106,9 +106,9 @@ jQuery(document).ready(function ($) {
 function sierralightboxInit() {
     'use strict';
     jQuery(document).ready(function ($) {
-        $('.gallery-item a').has('img').addClass('image-lightbox');
+        $('.single .gallery-item a').has('img').addClass('image-lightbox');
         $('.single-post-area-info a').has('img').addClass('image-lightbox');
-        $('.gallery-item, .single-post-area-info').lightGallery({
+        $('.single .gallery-item, .single-post-area-info').lightGallery({
             download: false,
             selector: '.image-lightbox',
             counter: false,
@@ -127,6 +127,9 @@ sierralightboxInit();
 jQuery(document).ready(function ($) {
     'use strict';
 	$('.menu a[href*="#"]:not([href="#"]), .btn[href*="#"]:not([href="#"]), .b-btn[href*="#"]:not([href="#"]), .button[href*="#"]:not([href="#"]), body a[href*="#comments"]:not([href="#"]), body a[href*="#respond"]:not([href="#"])').click(function () {
+        //$(".mobile-menu .menu").removeClass('open');
+        //$(".sierra-menu #burger-icon").removeClass('open');
+
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -140,6 +143,11 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+    $('.mobile-menu .menu a[href*="#"]:not([href="#"])').click(function () {
+      $(".mobile-menu .menu, .sierra-menu #burger-icon").removeClass('open');
+      $('.sierra-header').removeClass('mobile');
+      $('.sierra-header').addClass('header-scroll-top');
+    });
 });
 
 
@@ -147,21 +155,22 @@ jQuery(document).ready(function ($) {
 // Masonry Layout
 
 
-
-jQuery(document).ready(function ($) {
+function SierraMasonryInit() {
   'use strict';
-  if ($('.masonry-container')[0]) {
-    $(window).on("load", function () {
-      var container = document.querySelector('.masonry-container');
-      var msnry = new Masonry( container, {
-        itemSelector: '.item',
-        columnWidth: $('.masonry-container').find('.item')[1],
-        horizontalOrder: true,
+  jQuery(document).ready(function ($) {
+    if ($('.masonry-container')[0]) {
+      $(window).on("load", function () {
+        var container = document.querySelector('.masonry-container');
+          var msnry = new Masonry( container, {
+            itemSelector: '.item',
+            columnWidth: $('.masonry-container').find('.item')[1],
+            horizontalOrder: true,
+          });
       });
-    });
-  }
-});
-
+    }
+  });
+}
+SierraMasonryInit();
 
 
 //Header

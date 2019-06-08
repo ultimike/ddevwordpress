@@ -8,13 +8,7 @@
 ?>
 <footer>
 
-	<?php
-	if ( class_exists( 'Kirki' ) ) {
-		get_template_part( 'inc/footers/footer', get_theme_mod( 'footer_layout', 'simple' ) );
-	} else {
-		get_template_part( 'inc/footers/footer', 'simple' );
-	}
-	?>
+	<?php do_action( 'wpsierra_footer_layout' ); ?>
 
 </footer>
 
